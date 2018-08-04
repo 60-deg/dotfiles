@@ -1,0 +1,11 @@
+# メニューを使って補完する
+TAB: menu-complete
+# 前方一致履歴補完
+"\C-p": history-search-backward
+"\C-n": history-search-forward
+# 補完時に大文字小文字を無視
+set completion-ignore-case on
+# ベルを鳴らさない
+set bell-style none
+# 候補リストのディレクトリや実行可能ファイルに印をつける
+set visible-stats on

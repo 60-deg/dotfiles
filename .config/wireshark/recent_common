@@ -1,0 +1,79 @@
+# Recent settings file for Wireshark 2.0.2.
+#
+# This file is regenerated each time Wireshark is quit.
+# So be careful, if you want to make manual changes here.
+
+######## Recent capture files (latest last), cannot be altered through command line ########
+
+recent.capture_file: /Users/hatsumi/Desktop/CTF.pcap
+recent.capture_file: /Users/hatsumi/Downloads/CTF.pcap
+recent.capture_file: /Users/hatsumi/Downloads/20170515.pcapng
+recent.capture_file: /Users/hatsumi/Developer/CTF/CpawCTF/network10.pcap
+recent.capture_file: /Users/hatsumi/Developer/CTF/CpawCTF/lv02/network100.pcap
+recent.capture_file: /Users/hatsumi/Downloads/http_traffic.pcap
+recent.capture_file: /Users/hatsumi/Downloads/http_traffic (1).pcap
+recent.capture_file: /Users/hatsumi/Developer/CTF/CpawCTF/lv02/http_traffic.pcap
+recent.capture_file: /Users/hatsumi/Developer/CTF/lecture/for100.pcap
+recent.capture_file: /Users/hatsumi/Developer/CTF/18_0526 ctf4b/packet.pcap
+
+######## Recent capture filters (latest last), cannot be altered through command line ########
+
+
+######## Recent display filters (latest last), cannot be altered through command line ########
+
+recent.display_filter: http.content_type == "application/javascript"
+recent.display_filter: http.content_type == "application/js"
+recent.display_filter: http.content_type == "application/gzip"
+recent.display_filter: http.content_type == "application/zip"
+recent.display_filter: http.content_type == "application/image"
+recent.display_filter: http.content_type == "application/jpg"
+recent.display_filter: http.content_type == "application/jpeg"
+recent.display_filter: http.content_type == "application"
+recent.display_filter: http.content_type
+recent.display_filter: http
+
+# Main window geometry.
+# Decimal numbers.
+gui.geometry_main_x: 167
+gui.geometry_main_y: 23
+gui.geometry_main_width: 1273
+gui.geometry_main_height: 850
+
+# Main window maximized.
+# TRUE or FALSE (case-insensitive).
+gui.geometry_main_maximized: FALSE
+
+# Statusbar left pane size.
+# Decimal number.
+gui.geometry_status_pane: 250
+
+# Statusbar middle pane size.
+# Decimal number.
+gui.geometry_status_pane_right: 250
+
+# Last used Configuration Profile.
+gui.last_used_profile: Default
+
+# WLAN statistics upper pane size.
+# Decimal number.
+gui.geometry_status_wlan_stats_pane: 200
+
+# Warn if running with elevated permissions (e.g. as root).
+# TRUE or FALSE (case-insensitive).
+privs.warn_if_elevated: TRUE
+
+# Warn if npf.sys isn't loaded on Windows >= 6.0.
+# TRUE or FALSE (case-insensitive).
+privs.warn_if_no_npf: TRUE
+
+# Custom colors.
+# List of custom colors selected in Qt color picker.
+gui.custom_colors: 
+	"ffffffff", "ffffffff",
+	"ffffffff", "ffffffff",
+	"ffffffff", "ffffffff",
+	"ffffffff", "ffffffff",
+	"ffffffff", "ffffffff",
+	"ffffffff", "ffffffff",
+	"ffffffff", "ffffffff",
+	"ffffffff", "ffffffff"
