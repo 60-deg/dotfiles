@@ -7,5 +7,5 @@ ln -sf ~/dotfiles/.config ~/.config
 ln -sf ~/dotfiles/.gitconfig ~/.gitconfig
 ln -sf ~/dotfiles/.gitignore_global ~/.gitignore_global
 ln -sf ~/dotfiles/.inputrc ~/.inputrc
-ln -sf ~/dotfiles/.templates ~/.templates
+ln -sf ~/dotfiles/templates ~/.templates
 ln -sf ~/dotfiles/.vimrc ~/.vimrc

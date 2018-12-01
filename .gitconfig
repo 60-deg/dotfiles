@@ -1,5 +1,5 @@
 [core]
-	excludesfile = /Users/hatsumi/.gitignore_global
+	excludesfile = ~/.gitignore_global
 [difftool "sourcetree"]
 	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
 	path = 
@@ -7,7 +7,7 @@
 	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
 	trustExitCode = true
 [user]
-	name = 60deg
+	name = 60°
 	email = hatsumi.yamane.4609@gmail.com
 [commit]
 	template = /Users/hatsumi/.stCommitMsg
@@ -30,3 +30,4 @@
 	po = commit -m "po"
 	pushsu = push --set-upstream
 	pushsuo = push --set-upstream origin
+	push-f = push --force-with-lease
