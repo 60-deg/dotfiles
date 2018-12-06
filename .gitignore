@@ -1,3 +1,4 @@
 *_local
 /.config/*
 !/.config/nvim
+!/.config/vscode

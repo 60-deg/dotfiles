@@ -10,7 +10,7 @@
 	name = 60°
 	email = hatsumi.yamane.4609@gmail.com
 [commit]
-	template = /Users/hatsumi/.stCommitMsg
+	template = ~/.stCommitMsg
 [color]
 	ui = auto
 	#色の表示ができないとき

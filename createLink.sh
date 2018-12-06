@@ -9,3 +9,5 @@ ln -sf ~/dotfiles/.gitignore_global ~/.gitignore_global
 ln -sf ~/dotfiles/.inputrc ~/.inputrc
 ln -sf ~/dotfiles/templates ~/.templates
 ln -sf ~/dotfiles/.vimrc ~/.vimrc
+ln -sf ~/dotfiles/.config/vscode/settings.json ~/Library/Application\ Support/Code/User/settings.json
+ln -sf ~/dotfiles/.config/vscode/snippets ~/Library/Application\ Support/Code/User/snippets
