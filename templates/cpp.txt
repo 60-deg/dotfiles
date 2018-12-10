@@ -3,7 +3,7 @@
 #include <algorithm>
 #include <string>
 
-#define REP(i,n) for(int i=0; i<n; i++)
+#define REP(i,n) for(int i=0; i<(n); i++)
 #define debug(x) cerr << __LINE__ << " : " << #x << " = " << (x) << endl;
  
 #define mod 1000000007 //1e9+7(prime number)
