@@ -33,6 +33,9 @@ alias transparent='convert -fuzz 50% -fill none -opaque'
 
 alias mysql='mysql -uroot -p$MARIADB_PASSWORD'
 
+passgen() { pwgen -Bs $1 1 | pbcopy; pbpaste; 
+}
+
 export SDKMAN_DIR="~/.sdkman"
 [ -s "~/.sdkman/bin/sdkman-init.sh" ] && source "~/.sdkman/bin/sdkman-init.sh"
 

@@ -100,5 +100,6 @@
   "editor.formatOnPaste": true,
   "javascript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBraces": false,
   "editor.highlightActiveIndentGuide": true,
-  "editor.trimAutoWhitespace": false
+  "editor.trimAutoWhitespace": false,
+  "vsnotes.defaultNotePath": "/Users/hatsumi/Dropbox/VSNotes"
 }

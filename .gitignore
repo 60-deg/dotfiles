@@ -2,3 +2,4 @@
 /.config/*
 !/.config/nvim
 !/.config/vscode
+/templates/templates
