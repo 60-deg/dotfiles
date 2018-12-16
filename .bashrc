@@ -21,6 +21,7 @@ alias touchcpp='cp ~/.templates/cpp.txt'
 alias touchc='cp ~/.templates/c.txt'
 alias touchtex='cp ~/.templates/tex.txt'
 alias touchsh='cp ~/.templates/sh.txt'
+alias touchvue='cp ~/.templates/Vue.txt'
 
 alias openvscode='open . -a Visual\ Studio\ Code.app'
 alias opendotfiles='open ~/dotfiles/ -a Visual\ Studio\ Code.app'
@@ -39,6 +40,7 @@ passgen() { pwgen -Bs $1 1 | pbcopy; pbpaste;
 export SDKMAN_DIR="~/.sdkman"
 [ -s "~/.sdkman/bin/sdkman-init.sh" ] && source "~/.sdkman/bin/sdkman-init.sh"
 
-
 [ -f /etc/.inputrc ] && bind -f /etc/.inputrc
 [ -f ~/.inputrc ] && bind -f ~/.inputrc
+
+./createLink.sh

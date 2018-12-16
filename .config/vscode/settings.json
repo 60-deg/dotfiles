@@ -60,10 +60,10 @@
   "editor.renderWhitespace": "boundary",
   "go.gopath": "/Users/hatsumi/Developer/go",
   "go.inferGopath": true,
-  "markdown.extension.preview.autoShowPreviewToSide": true,
   "[javascript]": {
     "editor.insertSpaces": true,
-    "editor.formatOnSave": true
+    "editor.formatOnSave": true,
+    "editor.formatOnPaste": true
   },
   "prettier.semi": false,
   "prettier.singleQuote": true,
