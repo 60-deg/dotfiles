@@ -1,8 +1,9 @@
 export NODE_ENV=development
-
 export TERM=xterm-256color
-
 export PS1='\u:\W$ '
+export PATH=~/.nimble/bin:$PATH
+
+alias ps1="export PS1='\W$ '"
 
 alias gcc='gcc'
 alias gccpro='gcc -O2 -lm -std=gnu89 -Wall -Wvla -Wdeclaration-after-statement'
@@ -28,7 +29,7 @@ alias opendotfiles='open ~/dotfiles/ -a Visual\ Studio\ Code.app'
 alias openiterm='open . -a iTerm'
 alias opensourcetree='open . -a SourceTree'
 
-alias gocwi='gocwi -a $STUDENTNUMBER -p $OCWIPASS -m $OCWIMATRIX -d ~/Dropbox/講義資料'
+alias gocwi='gocwi -a $STUDENTNUMBER -p $OCWIPASS -m $OCWIMATRIX -d ~/OneDrive/講義資料'
 
 alias transparent='convert -fuzz 50% -fill none -opaque'
 
@@ -43,4 +44,4 @@ export SDKMAN_DIR="~/.sdkman"
 [ -f /etc/.inputrc ] && bind -f /etc/.inputrc
 [ -f ~/.inputrc ] && bind -f ~/.inputrc
 
-./createLink.sh
+~/dotfiles/createLink.sh

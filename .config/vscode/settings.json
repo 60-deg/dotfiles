@@ -1,21 +1,11 @@
 {
-  // エディタ
-  "workbench.colorTheme": "Quiet Light",
-  "editor.fontFamily": "Myrica M, Menlo, Monaco, 'Courier New', monospace",
-  "editor.fontSize": 14,
-  "editor.wrappingIndent": "indent",
-  "editor.formatOnSave": true,
-  "editor.formatOnType": false,
-  "editor.detectIndentation": true,
-  "editor.tabSize": 2,
-  "editor.insertSpaces": false,
-  "editor.wordWrap": "on",
-  "explorer.confirmDelete": false,
+  "workbench.startupEditor": "newUntitledFile",
 
   // 統合ターミナル
   "terminal.integrated.copyOnSelection": true,
   "terminal.integrated.fontFamily": "RobotoMono Nerd Font Mono",
   "terminal.integrated.fontSize": 13,
+  "terminal.integrated.cursorStyle": "line",
 
   // 色の設定
   "workbench.colorCustomizations": {
@@ -43,36 +33,110 @@
     "editor.background": "#f1f4fa"
   },
 
+  // ウィンドウ
+  "window.zoomLevel": 0,
+
+  // エディタ
+  "workbench.colorTheme": "Quiet Light",
+  "editor.fontFamily": "Myrica M, Menlo, Monaco, 'Courier New', monospace",
+  "editor.fontSize": 14,
+  "editor.wrappingIndent": "indent",
+  "editor.formatOnSave": true,
+  "editor.formatOnType": false,
+  "editor.detectIndentation": true,
+  "editor.tabSize": 2,
+  "editor.wordWrap": "on",
+  "explorer.confirmDelete": false,
+  "editor.renderWhitespace": "boundary",
+  "editor.minimap.enabled": false,
+  "editor.snippetSuggestions": "top",
+  "editor.tabCompletion": "on",
+  "editor.quickSuggestions": {
+    "other": true,
+    "comments": true,
+    "strings": true
+  },
+  "editor.renderIndentGuides": true,
+  "editor.highlightActiveIndentGuide": true,
+  "editor.trimAutoWhitespace": false,
+  "editor.suggestSelection": "first",
+
+  // 検索
+  "search.quickOpen.includeSymbols": true,
+  "search.useReplacePreview": false,
+
+  // emmet
+  "emmet.showSuggestionsAsSnippets": true,
+
+  // vs intellicode
+  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+
+  // files associations
+  "files.associations": {
+    "*.js": "javascript",
+    "*.scss": "scss"
+  },
+
   // C言語
-  //"C_Cpp.clang_format_fallbackStyle": "LLVM",
-  "C_Cpp.clang_format_style": "{ BasedOnStyle: LLVM, IndentWidth: 4, TabWidth: 4, UseTab: Always,  Standard: Auto, AllowShortIfStatementsOnASingleLine: true, AllowShortLoopsOnASingleLine: true, AllowShortFunctionsOnASingleLine: Empty, MaxEmptyLinesToKeep: 1 }",
+  "C_Cpp.clang_format_style": "{ BasedOnStyle: LLVM, IndentWidth: 2, TabWidth: 2, UseTab: Always,  Standard: Auto, AllowShortIfStatementsOnASingleLine: true, AllowShortLoopsOnASingleLine: true, AllowShortFunctionsOnASingleLine: Empty, MaxEmptyLinesToKeep: 1, ReflowComments: false }",
+
+  // Golang
   "go.lintOnSave": "package",
   "[go]": {
     "editor.insertSpaces": false,
     "editor.formatOnSave": false
   },
   "go.formatTool": "goimports",
-  "workbench.startupEditor": "newUntitledFile",
+  "go.gopath": "~/Developer/go",
+  "go.inferGopath": true,
+
+  // latex
   "latex-workshop.message.update.show": false,
   "latex-workshop.latex.autoBuild.cleanAndRetry.enabled": false,
-  "latex-workshop.latex.autoBuild.onSave.enabled": false,
+  "latex-workshop.latex.autoBuild.run": "never",
   "latex-workshop.synctex.afterBuild.enabled": false,
-  "editor.renderWhitespace": "boundary",
-  "go.gopath": "/Users/hatsumi/Developer/go",
-  "go.inferGopath": true,
+
+  // prettier
+  "prettier.semi": false,
+  "prettier.singleQuote": true,
+  "prettier.tabWidth": 2,
+  "prettier.jsxSingleQuote": true,
+
+  // typescript
+  "typescript.format.enable": false,
+  "typescript.format.insertSpaceBeforeFunctionParenthesis": true,
+  "typescript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBrackets": true,
+  "typescript.preferences.quoteStyle": "single",
+
+  // javascript
   "[javascript]": {
     "editor.insertSpaces": true,
     "editor.formatOnSave": true,
-    "editor.formatOnPaste": true
+    "editor.formatOnPaste": true,
+    "editor.defaultFormatter": "vscode.typescript-language-features"
   },
-  "prettier.semi": false,
-  "prettier.singleQuote": true,
   "javascript.format.insertSpaceBeforeFunctionParenthesis": true,
-  "vetur.format.defaultFormatter.js": "vscode-typescript",
   "javascript.preferences.quoteStyle": "single",
-  "editor.minimap.enabled": false,
-  "terminal.integrated.cursorStyle": "line",
-  "typescript.format.insertSpaceBeforeFunctionParenthesis": true,
+  "javascript.format.insertSpaceAfterOpeningAndBeforeClosingJsxExpressionBraces": true,
+  "javascript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBrackets": true,
+  "javascript.format.insertSpaceAfterConstructor": true,
+
+  // vue
+  "vetur.format.options.tabSize": 2,
+  "vetur.format.defaultFormatter.js": "vscode-typescript",
+  "vetur.format.defaultFormatter.html": "prettier",
+
+  // html
+  "html.format.indentInnerHtml": true,
+  "html.autoClosingTags": true,
+  "html.format.enable": false,
+
+  // scss
+  "[scss]": {
+    "editor.defaultFormatter": "vscode.css-language-features"
+  },
+
+  // markdown-pdf
   "markdown-pdf.displayHeaderFooter": false,
   "markdown-pdf.headerTemplate": "",
   "markdown-pdf.footerTemplate": "<div style=\"font-size: 9px; margin: 0 auto;\"> <span class='pageNumber'></span> / <span class='totalPages'></span></div>",
@@ -82,24 +146,14 @@
   "markdown-pdf.margin.top": "2.5cm",
   "markdown-pdf.breaks": true,
   "markdown-pdf.convertOnSave": false,
+
+  // java
   "java.errors.incompleteClasspath.severity": "ignore",
-  "html.format.indentInnerHtml": true,
-  "editor.snippetSuggestions": "top",
-  "editor.tabCompletion": "on",
-  "html.suggest.angular1": true,
-  "html.suggest.ionic": true,
-  "search.quickOpen.includeSymbols": true,
-  "emmet.showSuggestionsAsSnippets": true,
-  "editor.quickSuggestions": {
-    "other": true,
-    "comments": true,
-    "strings": true
-  },
-  "html.autoClosingTags": true,
-  "editor.renderIndentGuides": true,
-  "editor.formatOnPaste": true,
-  "javascript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBraces": false,
-  "editor.highlightActiveIndentGuide": true,
-  "editor.trimAutoWhitespace": false,
-  "vsnotes.defaultNotePath": "/Users/hatsumi/Dropbox/VSNotes"
+
+  // verilog
+  "verilog.linting.linter": "iverilog",
+
+  // vsNotes
+  "vsnotes.defaultNotePath": "~/Dropbox/VSNotes",
+  "vsnotes.defaultNoteTitle": "{title}.{ext}"
 }
