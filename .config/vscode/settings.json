@@ -155,5 +155,6 @@
 
   // vsNotes
   "vsnotes.defaultNotePath": "~/Dropbox/VSNotes",
-  "vsnotes.defaultNoteTitle": "{title}.{ext}"
+  "vsnotes.defaultNoteTitle": "{title}.{ext}",
+  "workbench.editor.closeEmptyGroups": false
 }

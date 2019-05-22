@@ -1,0 +1,53 @@
+// 既定値を上書きするには、このファイル内にキー バインドを挿入しますauto[]
+[
+  {
+    "key": "ctrl+alt+right",
+    "command": "workbench.action.splitEditorRight"
+  },
+  {
+    "key": "ctrl+alt+down",
+    "command": "workbench.action.splitEditorDown"
+  },
+  {
+    "key": "ctrl+alt+left",
+    "command": "workbench.action.splitEditorLeft"
+  },
+  {
+    "key": "ctrl+alt+up",
+    "command": "workbench.action.splitEditorUp"
+  },
+  {
+    "key": "shift+cmd+p",
+    "command": "workbench.action.quickOpen"
+  },
+  {
+    "key": "cmd+p",
+    "command": "-workbench.action.quickOpen"
+  },
+  {
+    "key": "shift+cmd+p",
+    "command": "workbench.action.quickOpenNavigateNextInFilePicker",
+    "when": "inFilesPicker && inQuickOpen"
+  },
+  {
+    "key": "cmd+p",
+    "command": "-workbench.action.quickOpenNavigateNextInFilePicker",
+    "when": "inFilesPicker && inQuickOpen"
+  },
+  {
+    "key": "cmd+p",
+    "command": "workbench.action.showCommands"
+  },
+  {
+    "key": "shift+cmd+p",
+    "command": "-workbench.action.showCommands"
+  },
+  {
+    "key": "alt+2",
+    "command": "workbench.action.editorLayoutTwoColumns"
+  },
+  {
+    "key": "shift+alt+2",
+    "command": "workbench.action.editorLayoutTwoRows"
+  }
+]
