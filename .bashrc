@@ -1,9 +1,10 @@
 export NODE_ENV=development
 export TERM=xterm-256color
 export PS1='\u:\W$ '
-export PATH=~/.nimble/bin:$PATH
-
-alias ps1="export PS1='\W$ '"
+export PATH=$PATH:/usr/local/bin:~/Developer/go/bin:/opt/local/Library/Frameworks/Python.framework/Versions/2.7/bin:/Applications/microchip/xc8/v1.43/bin:~/.nimble/bin
+export GOPATH=~/Developer/go
+export SDKMAN_DIR=~/.sdkman
+[ -s ~/.sdkman/bin/sdkman-init.sh ] && source ~/.sdkman/bin/sdkman-init.sh
 
 alias gcc='gcc'
 alias gccpro='gcc -O2 -lm -std=gnu89 -Wall -Wvla -Wdeclaration-after-statement'
@@ -15,7 +16,7 @@ alias gpprest='g++ -L/usr/local/opt/openssl/lib -I/usr/local/opt/openssl/include
 
 alias python='python3'
 
-alias ls='ls -G'
+alias ls='ls -G -F'
 alias diff='diff -u'
 
 alias touchcpp='cp ~/.templates/cpp.txt'
@@ -35,16 +36,16 @@ alias transparent='convert -fuzz 50% -fill none -opaque'
 
 alias mysql='mysql -uroot -p$MARIADB_PASSWORD'
 
-passgen() { pwgen -Bs $1 1 | pbcopy; pbpaste; 
+# generate password
+passgen() {
+  PASSLEN=8
+  if [ $# -ge 1 ]; then
+    PASSLEN=$1
+  fi
+  pwgen -Bs $PASSLEN 1 | pbcopy;
+  echo 'password copied to clipboard'
 }
 
-cdoriginal() { cd `readlink $1`
+# シンボリックリンクのオリジナルに移動
+cdorig() { cd `readlink $1`
 }
-
-export SDKMAN_DIR="~/.sdkman"
-[ -s "~/.sdkman/bin/sdkman-init.sh" ] && source "~/.sdkman/bin/sdkman-init.sh"
-
-[ -f /etc/.inputrc ] && bind -f /etc/.inputrc
-[ -f ~/.inputrc ] && bind -f ~/.inputrc
-
-~/dotfiles/createLink.sh

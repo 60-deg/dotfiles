@@ -124,7 +124,6 @@
   // vue
   "vetur.format.options.tabSize": 2,
   "vetur.format.defaultFormatter.js": "vscode-typescript",
-  "vetur.format.defaultFormatter.html": "prettier",
 
   // html
   "html.format.indentInnerHtml": true,
@@ -153,8 +152,26 @@
   // verilog
   "verilog.linting.linter": "iverilog",
 
+  // yaml
+  "yaml.schemas": {
+    "https://raw.githubusercontent.com/kogosoftwarellc/open-api/master/packages/openapi-schema-validator/resources/openapi-3.0.json": [
+      "*swagger.yaml",
+      "*swagger.yml"
+    ]
+  },
+  "[yaml]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+
+  // nginx
+  "[NGINX]": {
+    "editor.tabSize": 2,
+    "editor.formatOnSave": false
+  },
+
   // vsNotes
   "vsnotes.defaultNotePath": "~/Dropbox/VSNotes",
   "vsnotes.defaultNoteTitle": "{title}.{ext}",
-  "workbench.editor.closeEmptyGroups": false
+  "workbench.editor.closeEmptyGroups": false,
+  "pugvuebeautify.omitDiv": true
 }
