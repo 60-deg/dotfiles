@@ -1,5 +1,7 @@
 {
   "workbench.startupEditor": "newUntitledFile",
+  "workbench.editor.closeEmptyGroups": false,
+  "update.showReleaseNotes": false,
 
   // 統合ターミナル
   "terminal.integrated.copyOnSelection": true,
@@ -124,6 +126,7 @@
   // vue
   "vetur.format.options.tabSize": 2,
   "vetur.format.defaultFormatter.js": "vscode-typescript",
+  "pugvuebeautify.omitDiv": true,
 
   // html
   "html.format.indentInnerHtml": true,
@@ -170,8 +173,8 @@
   },
 
   // vsNotes
-  "vsnotes.defaultNotePath": "~/Dropbox/VSNotes",
-  "vsnotes.defaultNoteTitle": "{title}.{ext}",
-  "workbench.editor.closeEmptyGroups": false,
-  "pugvuebeautify.omitDiv": true
+  "vsnotes.defaultNotePath": "~/Library/Mobile Documents/9CR7T2DMDG~com~ngocluu~onewriter/Documents/notes",
+  "vsnotes.defaultNoteTitle": "{title}.{ext}"
+
+  // others
 }

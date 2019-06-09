@@ -49,5 +49,38 @@
   {
     "key": "shift+alt+2",
     "command": "workbench.action.editorLayoutTwoRows"
+  },
+  {
+    "key": "alt+cmd+p",
+    "command": "markdown.showPreviewToSide",
+    "when": "!terminalFocus && editorLangId == 'markdown'"
+  },
+  {
+    "key": "cmd+k v",
+    "command": "-markdown.showPreviewToSide",
+    "when": "editorLangId == 'markdown'"
+  },
+  {
+    "key": "cmd+k v",
+    "command": "-markdown.extension.togglePreviewToSide",
+    "when": "!terminalFocus"
+  },
+  {
+    "key": "cmd+k p",
+    "command": "workbench.action.files.copyPathOfActiveFile"
+  },
+  {
+    "key": "cmd+k p",
+    "command": "-workbench.action.files.copyPathOfActiveFile"
+  },
+  {
+    "key": "alt+cmd+p",
+    "command": "graphviz.showPreviewToSide",
+    "when": "editorLangId == 'dot'"
+  },
+  {
+    "key": "cmd+k v",
+    "command": "-graphviz.showPreviewToSide",
+    "when": "editorLangId == 'dot'"
   }
 ]
