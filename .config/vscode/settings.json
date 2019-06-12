@@ -5,15 +5,18 @@
 
   // 統合ターミナル
   "terminal.integrated.copyOnSelection": true,
-  "terminal.integrated.fontFamily": "RobotoMono Nerd Font Mono",
+  "terminal.integrated.fontFamily": "SF Mono, RobotoMono Nerd Font Mono, monospace, serif",
   "terminal.integrated.fontSize": 13,
   "terminal.integrated.cursorStyle": "line",
+  "terminal.integrated.lineHeight": 1.2,
 
   // 色の設定
   "workbench.colorCustomizations": {
-    "terminal.background": "#b8b7b7",
+    "terminal.background": "#c2c2c2",
     "panel.border": "#6b5d93",
     "panel.background": "#e0e0e0",
+    "editor.lineHighlightBackground": "#2f00ff15",
+    "editor.background": "#f1f4fa",
     "editorGroup.border": "#6b5d93",
     "editorGroupHeader.tabsBackground": "#e7e7e7",
     "editorGroupHeader.tabsBorder": "#b4aacb",
@@ -25,14 +28,12 @@
     "editor.selectionBackground": "#999999a2",
     "titleBar.activeBackground": "#001ea3",
     "statusBar.background": "#001366",
-    "sideBar.background": "#6eaaf81e",
+    "sideBar.background": "#e5ebf5",
     "sideBarSectionHeader.background": "#006eff1e",
     "sideBar.dropBackground": "#006eff05",
     "activityBar.background": "#006eff21",
     "activityBar.inactiveForeground": "#001ea34b",
-    "activityBar.foreground": "#001ea3",
-    "editor.lineHighlightBackground": "#2f00ff15",
-    "editor.background": "#f1f4fa"
+    "activityBar.foreground": "#001ea3"
   },
 
   // ウィンドウ
@@ -40,7 +41,7 @@
 
   // エディタ
   "workbench.colorTheme": "Quiet Light",
-  "editor.fontFamily": "Myrica M, Menlo, Monaco, 'Courier New', monospace",
+  "editor.fontFamily": "Myrica M, Cica, Menlo, Monaco, 'Courier New', monospace",
   "editor.fontSize": 14,
   "editor.wrappingIndent": "indent",
   "editor.formatOnSave": true,
@@ -49,7 +50,7 @@
   "editor.tabSize": 2,
   "editor.wordWrap": "on",
   "explorer.confirmDelete": false,
-  "editor.renderWhitespace": "boundary",
+  "editor.renderWhitespace": "none",
   "editor.minimap.enabled": false,
   "editor.snippetSuggestions": "top",
   "editor.tabCompletion": "on",
@@ -62,6 +63,22 @@
   "editor.highlightActiveIndentGuide": true,
   "editor.trimAutoWhitespace": false,
   "editor.suggestSelection": "first",
+
+  // indent rainbow
+  // colorful
+  // "indentRainbow.colors": [
+  //   "rgba(249,219,227,0.2)",
+  //   "rgba(193,229,220,0.2)",
+  //   "rgba(206,191,219,0.2)",
+  //   "rgba(225,251,128,0.2)"
+  // ],
+  // monochrome
+  "indentRainbow.colors": [
+    "rgba(205,208,217,0.15)",
+    "rgba(164,166,171,0.15)",
+    "rgba(99,100,102,0.1)",
+    "rgba(42,43,45,0.1)"
+  ],
 
   // 検索
   "search.quickOpen.includeSymbols": true,
