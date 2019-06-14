@@ -25,7 +25,8 @@ alias touchtex='cp ~/.templates/tex.txt'
 alias touchsh='cp ~/.templates/sh.txt'
 alias touchvue='cp ~/.templates/Vue.txt'
 
-alias openvscode='open . -a Visual\ Studio\ Code.app'
+[ -e code ] || code() { open $1 -a Visual\ Studio\ Code.app 
+}
 alias opendotfiles='open ~/dotfiles/ -a Visual\ Studio\ Code.app'
 alias openiterm='open . -a iTerm'
 alias opensourcetree='open . -a SourceTree'

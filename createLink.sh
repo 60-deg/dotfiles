@@ -8,6 +8,7 @@ ln -sf ~/dotfiles/.gitignore_global ~/.gitignore_global
 ln -sf ~/dotfiles/.inputrc ~/.inputrc
 ln -sf ~/dotfiles/.vimrc ~/.vimrc
 
+[ -d ~/.templates ] || mkdir ~/.templates
 ln -sf ~/dotfiles/templates/ ~/.templates/
 rm ~/dotfiles/templates/templates
 

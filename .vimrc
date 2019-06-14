@@ -41,7 +41,6 @@ set showmatch matchtime=1
 imap { {}<LEFT>
 imap [ []<LEFT>
 imap ( ()<LEFT>
-call plug#begin('~/.vim/plugged')
 
 " 三点リーダー(…) 星マーク(★) 矢印(→)などの表示の改善
 set ambiwidth=double
@@ -49,17 +48,20 @@ set ambiwidth=double
 " 行頭行末間移動(カーソルキー限定)
 set whichwrap=b,s,<,>,[,]
 
-Plug 'itchyny/lightline.vim'
-Plug 'kadekillary/subtle_solo'
-Plug 'scrooloose/nerdtree'
-Plug 'ryanoasis/vim-devicons'
-Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
-Plug 'nightsense/simplifysimplify'
-Plug 'kadekillary/subtle_solo'
-Plug 'archseer/colibri.vim'
-Plug 'nightsense/seagrey'
 
-call plug#end()
+" call plug#begin('~/.vim/plugged')
+
+" Plug 'itchyny/lightline.vim'
+" Plug 'kadekillary/subtle_solo'
+" Plug 'scrooloose/nerdtree'
+" Plug 'ryanoasis/vim-devicons'
+" Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
+" Plug 'nightsense/simplifysimplify'
+" Plug 'kadekillary/subtle_solo'
+" Plug 'archseer/colibri.vim'
+" Plug 'nightsense/seagrey'
+
+" call plug#end()
 
 "colorscheme subtle_light
 "colorscheme simplifysimplify-light
