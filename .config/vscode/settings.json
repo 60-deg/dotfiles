@@ -27,6 +27,7 @@
     "editorWhitespace.foreground": "#d6d6d6",
     "editor.selectionBackground": "#999999a2",
     "titleBar.activeBackground": "#001ea3",
+    "titleBar.activeForeground": "#ffffff",
     "statusBar.background": "#001366",
     "sideBar.background": "#e5ebf5",
     "sideBarSectionHeader.background": "#006eff1e",
