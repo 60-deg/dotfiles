@@ -1,6 +1,5 @@
 export NODE_ENV=development
 export TERM=xterm-256color
-export PS1='\u:\W$ '
 export PATH=$PATH:/usr/local/bin:~/Developer/go/bin:/opt/local/Library/Frameworks/Python.framework/Versions/2.7/bin:/Applications/microchip/xc8/v1.43/bin:~/.nimble/bin
 export GOPATH=~/Developer/go
 export SDKMAN_DIR=~/.sdkman
@@ -36,6 +35,25 @@ alias gocwi='gocwi -a $STUDENTNUMBER -p $OCWIPASS -m $OCWIMATRIX -d ~/Dropbox/�
 alias transparent='convert -fuzz 50% -fill none -opaque'
 
 alias mysql='mysql -uroot -p$MARIADB_PASSWORD'
+
+# プロンプト表示
+[ ! -e ~/dotfiles/.git-prompt.sh ] && wget https://raw.githubusercontent.com/git/git/master/contrib/completion/git-prompt.sh -P ~/dotfiles/ -O .git-prompt.sh
+source ~/dotfiles/.git-prompt.sh
+# Gitブランチの状況を*+%で表示
+GIT_PS1_SHOWDIRTYSTATE=true
+GIT_PS1_SHOWUNTRACKEDFILES=true
+GIT_PS1_SHOWSTASHSTATE=true
+GIT_PS1_SHOWUPSTREAM=auto
+# 出力の後に改行を入れる
+function add_line {
+  if [[ -z "${PS1_NEWLINE_LOGIN}" ]]; then
+    PS1_NEWLINE_LOGIN=true
+  else
+    printf '\n'
+  fi
+}
+PROMPT_COMMAND='add_line'
+export PS1='\[\e[1;34m\]\W\[\e[0m\]\[\e[36m\] $(__git_ps1 "(%s)") \[\e[37m\]$ \[\e[0m\]'
 
 # generate password
 passgen() {
