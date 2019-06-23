@@ -18,6 +18,21 @@
       "routerHistoryMode": true,
       "vuex": true,
       "cssPreprocessor": "node-sass"
+    },
+    "no-vuex": {
+      "useConfigFiles": true,
+      "plugins": {
+        "@vue/cli-plugin-babel": {},
+        "@vue/cli-plugin-eslint": {
+          "config": "standard",
+          "lintOn": [
+            "save"
+          ]
+        }
+      },
+      "router": true,
+      "routerHistoryMode": true,
+      "cssPreprocessor": "node-sass"
     }
   }
 }
