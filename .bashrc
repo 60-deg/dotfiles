@@ -1,9 +1,14 @@
+# env vars
+
 export NODE_ENV=development
 export TERM=xterm-256color
 export PATH=$PATH:/usr/local/bin:~/Developer/go/bin:/opt/local/Library/Frameworks/Python.framework/Versions/2.7/bin:/Applications/microchip/xc8/v1.43/bin:~/.nimble/bin
 export GOPATH=~/Developer/go
 export SDKMAN_DIR=~/.sdkman
 [ -s ~/.sdkman/bin/sdkman-init.sh ] && source ~/.sdkman/bin/sdkman-init.sh
+
+
+# aliases
 
 alias gcc='gcc'
 alias gccpro='gcc -O2 -lm -std=gnu89 -Wall -Wvla -Wdeclaration-after-statement'
@@ -36,7 +41,27 @@ alias transparent='convert -fuzz 50% -fill none -opaque'
 
 alias mysql='mysql -uroot -p$MARIADB_PASSWORD'
 
+
+# 関数
+
+# generate password
+passgen() {
+  PASSLEN=8
+  if [ $# -ge 1 ]; then
+    PASSLEN=$1
+  fi
+  pwgen -Bs $PASSLEN 1 | pbcopy;
+  echo 'password copied to clipboard'
+}
+
+# シンボリックリンクのオリジナルに移動
+cdorig() { cd `readlink $1`
+}
+
+
 # プロンプト表示
+
+# Gitのブランチ名を表示
 [ ! -e ~/dotfiles/.git-prompt.sh ] && wget https://raw.githubusercontent.com/git/git/master/contrib/completion/git-prompt.sh -P ~/dotfiles/ -O .git-prompt.sh
 source ~/dotfiles/.git-prompt.sh
 # Gitブランチの状況を*+%で表示
@@ -53,18 +78,8 @@ function add_line {
   fi
 }
 PROMPT_COMMAND='add_line'
-export PS1='\[\e[1;34m\]\W\[\e[0m\]\[\e[36m\] $(__git_ps1 "(%s)") \[\e[37m\]$ \[\e[0m\]'
 
-# generate password
-passgen() {
-  PASSLEN=8
-  if [ $# -ge 1 ]; then
-    PASSLEN=$1
-  fi
-  pwgen -Bs $PASSLEN 1 | pbcopy;
-  echo 'password copied to clipboard'
-}
-
-# シンボリックリンクのオリジナルに移動
-cdorig() { cd `readlink $1`
-}
+WINDOWTITLE='\[\e]0;\w\007\]' # ターミナルのタイトルにパスを表示
+DIRECTORY='\[\e[1;34m\]\W\[\e[0m\]'
+GITBRANCH='\[\e[36m\] $(__git_ps1 "(%s)")'
+export PS1=$WINDOWTITLE$DIRECTORY$GITBRANCH'\[\e[37m\]$ \[\e[0m\]'

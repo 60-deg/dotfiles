@@ -192,7 +192,8 @@
 
   // vsNotes
   "vsnotes.defaultNotePath": "~/Library/Mobile Documents/9CR7T2DMDG~com~ngocluu~onewriter/Documents/notes",
-  "vsnotes.defaultNoteTitle": "{title}.{ext}"
+  "vsnotes.defaultNoteTitle": "{title}.{ext}",
+  "terminal.integrated.rendererType": "dom"
 
   // others
 }
