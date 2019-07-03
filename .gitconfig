@@ -20,6 +20,7 @@
 	cm = commit
 	cmm = commit -m
 	a = add
+	adda = add -A
 	df = diff
 	co = checkout
 	br = branch
