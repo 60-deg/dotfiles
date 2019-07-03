@@ -20,7 +20,12 @@ alias gpprest='g++ -L/usr/local/opt/openssl/lib -I/usr/local/opt/openssl/include
 
 alias python='python3'
 
-alias ls='ls -G -F'
+if [ "$(uname)" == 'Darwin' ]; then
+  # mac
+  alias ls='ls -G -F'
+else
+  alias ls='ls --color=auto -F'
+fi
 alias diff='diff -u'
 
 alias touchcpp='cp ~/.templates/cpp.txt'
@@ -62,7 +67,9 @@ cdorig() { cd `readlink $1`
 # プロンプト表示
 
 # Gitのブランチ名を表示
-[ ! -e ~/dotfiles/.git-prompt.sh ] && wget https://raw.githubusercontent.com/git/git/master/contrib/completion/git-prompt.sh -P ~/dotfiles/ -O .git-prompt.sh
+if [ ! -e ~/dotfiles/.git-prompt.sh ]; then
+  wget https://raw.githubusercontent.com/git/git/master/contrib/completion/git-prompt.sh -P ~/dotfiles/ -O .git-prompt.sh
+fi
 source ~/dotfiles/.git-prompt.sh
 # Gitブランチの状況を*+%で表示
 GIT_PS1_SHOWDIRTYSTATE=true
