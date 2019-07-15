@@ -9,6 +9,7 @@
   "terminal.integrated.fontSize": 13,
   "terminal.integrated.cursorStyle": "line",
   "terminal.integrated.lineHeight": 1.2,
+  "terminal.integrated.rendererType": "dom",
 
   // 色の設定
   "workbench.colorCustomizations": {
@@ -42,6 +43,9 @@
 
   // エディタ
   "workbench.colorTheme": "Quiet Light",
+  "workbench.editor.showTabs": false,
+  "workbench.iconTheme": "vscode-icons",
+  "material-icon-theme.folders.color": "#90a4ae",
   "editor.fontFamily": "Myrica M, Cica, Menlo, Monaco, 'Courier New', monospace",
   "editor.fontSize": 14,
   "editor.wrappingIndent": "indent",
@@ -97,15 +101,38 @@
     "*.scss": "scss"
   },
 
+  // eslint
+  "eslint.autoFixOnSave": true,
+  "eslint.validate": [
+    {
+      "language": "javascript",
+      "autoFix": true
+    },
+    {
+      "language": "typescript",
+      "autoFix": true
+    },
+    "javascriptreact",
+    {
+      "language": "vue",
+      "autoFix": true
+    },
+    {
+      "language": "vue-html",
+      "autoFix": true
+    }
+  ],
+  "eslint.run": "onType",
+
+  // prettier
+  "prettier.tslintIntegration": true,
+  "prettier.eslintIntegration": true,
+
   // C言語
-  "C_Cpp.clang_format_style": "{ BasedOnStyle: LLVM, IndentWidth: 2, TabWidth: 2, UseTab: Always,  Standard: Auto, AllowShortIfStatementsOnASingleLine: true, AllowShortLoopsOnASingleLine: true, AllowShortFunctionsOnASingleLine: Empty, MaxEmptyLinesToKeep: 1, ReflowComments: false }",
+  "C_Cpp.clang_format_style": "{ BasedOnStyle: LLVM, IndentWidth: 2, TabWidth: 2, UseTab: Never,  Standard: Auto, AllowShortIfStatementsOnASingleLine: true, AllowShortLoopsOnASingleLine: true, AllowShortFunctionsOnASingleLine: Empty, MaxEmptyLinesToKeep: 1, ReflowComments: false }",
 
   // Golang
   "go.lintOnSave": "package",
-  "[go]": {
-    "editor.insertSpaces": false,
-    "editor.formatOnSave": false
-  },
   "go.formatTool": "goimports",
   "go.gopath": "~/Developer/go",
   "go.inferGopath": true,
@@ -116,18 +143,6 @@
   "latex-workshop.latex.autoBuild.run": "never",
   "latex-workshop.synctex.afterBuild.enabled": false,
 
-  // prettier
-  "prettier.semi": false,
-  "prettier.singleQuote": true,
-  "prettier.tabWidth": 2,
-  "prettier.jsxSingleQuote": true,
-
-  // typescript
-  "typescript.format.enable": false,
-  "typescript.format.insertSpaceBeforeFunctionParenthesis": true,
-  "typescript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBrackets": true,
-  "typescript.preferences.quoteStyle": "single",
-
   // javascript
   "[javascript]": {
     "editor.insertSpaces": true,
@@ -135,16 +150,32 @@
     "editor.formatOnPaste": true,
     "editor.defaultFormatter": "vscode.typescript-language-features"
   },
+  "javascript.format.enable": false,
   "javascript.format.insertSpaceBeforeFunctionParenthesis": true,
   "javascript.preferences.quoteStyle": "single",
   "javascript.format.insertSpaceAfterOpeningAndBeforeClosingJsxExpressionBraces": true,
   "javascript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBrackets": true,
   "javascript.format.insertSpaceAfterConstructor": true,
 
+  // typescript
+  "[typescript]": {
+    // "editor.defaultFormatter": "vscode.typescript-language-features",
+    "editor.tabSize": 2,
+    "editor.formatOnSave": false
+  },
+  "typescript.format.enable": false,
+  "typescript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBrackets": true,
+  "typescript.preferences.quoteStyle": "single",
+
   // vue
   "vetur.format.options.tabSize": 2,
   "vetur.format.defaultFormatter.js": "vscode-typescript",
   "pugvuebeautify.omitDiv": true,
+  "vetur.format.defaultFormatter.ts": "prettier",
+  "vetur.format.defaultFormatter.html": "prettier",
+  "vetur.experimental.templateInterpolationService": true,
+  "vetur.validation.script": true,
+  "vetur.validation.template": true,
 
   // html
   "html.format.indentInnerHtml": true,
@@ -173,12 +204,20 @@
   // verilog
   "verilog.linting.linter": "iverilog",
 
+  // json
+  "json.schemas": [
+    {
+      "http://json.schemastore.org/tsconfig": ["tsconfig.json"]
+    }
+  ],
+
   // yaml
   "yaml.schemas": {
     "https://raw.githubusercontent.com/kogosoftwarellc/open-api/master/packages/openapi-schema-validator/resources/openapi-3.0.json": [
       "*swagger.yaml",
       "*swagger.yml"
-    ]
+    ],
+    "http://json.schemastore.org/ansible-stable-2.5": ["main.yml"]
   },
   "[yaml]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
@@ -192,8 +231,7 @@
 
   // vsNotes
   "vsnotes.defaultNotePath": "~/Library/Mobile Documents/9CR7T2DMDG~com~ngocluu~onewriter/Documents/notes",
-  "vsnotes.defaultNoteTitle": "{title}.{ext}",
-  "terminal.integrated.rendererType": "dom"
+  "vsnotes.defaultNoteTitle": "{title}.{ext}"
 
   // others
 }
