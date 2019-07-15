@@ -19,6 +19,8 @@
 	st = status
 	cm = commit
 	cmm = commit -m
+	cmam = commit --amend --no-edit
+	cmamp = !git commit --amend --no-edit && git push-f
 	a = add
 	adda = add -A
 	df = diff
