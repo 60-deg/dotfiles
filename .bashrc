@@ -33,6 +33,8 @@ alias touchc='cp ~/.templates/c.txt'
 alias touchtex='cp ~/.templates/tex.txt'
 alias touchsh='cp ~/.templates/sh.txt'
 alias touchvue='cp ~/.templates/Vue.txt'
+alias touchvuets='cp ~/.templates/Vue-ts.txt'
+alias touchreact='cp ~/.templates/React.txt'
 
 [ -e code ] || code() { open $1 -a Visual\ Studio\ Code.app 
 }
