@@ -94,11 +94,11 @@
     "when": "textInputFocus"
   },
   {
-    "key": "ctrl+b down",
+    "key": "alt+cmd+down",
     "command": "workbench.action.nextSideBarView"
   },
   {
-    "key": "ctrl+b up",
+    "key": "alt+cmd+up",
     "command": "workbench.action.previousSideBarView"
   },
   {
@@ -130,5 +130,25 @@
   {
     "key": "cmd+,",
     "command": "-workbench.action.openSettings"
+  },
+  {
+    "key": "alt+cmd+down",
+    "command": "-editor.action.insertCursorBelow",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "alt+cmd+down",
+    "command": "-workbench.action.terminal.focusNextPane",
+    "when": "terminalFocus"
+  },
+  {
+    "key": "alt+cmd+up",
+    "command": "-workbench.action.terminal.focusPreviousPane",
+    "when": "terminalFocus"
+  },
+  {
+    "key": "alt+cmd+up",
+    "command": "-editor.action.insertCursorAbove",
+    "when": "editorTextFocus"
   }
 ]
