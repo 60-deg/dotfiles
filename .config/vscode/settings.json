@@ -124,7 +124,9 @@
   "typescript.format.enable": false,
   "typescript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBrackets": true,
   "typescript.preferences.quoteStyle": "single",
+  "typescript.updateImportsOnFileMove.enabled": "always",
   // vue
+  "vetur.format.enable": false,
   "vetur.format.options.tabSize": 2,
   "vetur.format.defaultFormatter.js": "vscode-typescript",
   "pugvuebeautify.omitDiv": true,
@@ -153,6 +155,7 @@
   "markdown-pdf.convertOnSave": false,
   // java
   "java.errors.incompleteClasspath.severity": "ignore",
+  "java.configuration.checkProjectSettingsExclusions": false,
   // verilog
   "verilog.linting.linter": "iverilog",
   // json
@@ -179,6 +182,7 @@
   },
   // vsNotes
   "vsnotes.defaultNotePath": "~/Library/Mobile Documents/9CR7T2DMDG~com~ngocluu~onewriter/Documents/notes",
-  "vsnotes.defaultNoteTitle": "{title}.{ext}"
+  "vsnotes.defaultNoteTitle": "{title}.{ext}",
   // others
+  "explorer.confirmDragAndDrop": false
 }
