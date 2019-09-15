@@ -2,7 +2,6 @@
   "workbench.startupEditor": "newUntitledFile",
   "workbench.editor.closeEmptyGroups": false,
   "update.showReleaseNotes": false,
-
   // 統合ターミナル
   "terminal.integrated.copyOnSelection": true,
   "terminal.integrated.fontFamily": "SF Mono, RobotoMono Nerd Font Mono, monospace, serif",
@@ -10,39 +9,10 @@
   "terminal.integrated.cursorStyle": "line",
   "terminal.integrated.lineHeight": 1.2,
   "terminal.integrated.rendererType": "dom",
-
-  // 色の設定
-  "workbench.colorCustomizations": {
-    "terminal.background": "#c2c2c2",
-    "panel.border": "#6b5d93",
-    "panel.background": "#e0e0e0",
-    "editor.lineHighlightBackground": "#2f00ff15",
-    "editor.background": "#f1f4fa",
-    "editorGroup.border": "#6b5d93",
-    "editorGroupHeader.tabsBackground": "#e7e7e7",
-    "editorGroupHeader.tabsBorder": "#b4aacb",
-    "editorIndentGuide.activeBackground": "#b4aacb",
-    "editorIndentGuide.background": "#e0e0e0",
-    "editor.findMatchBackground": "#0471ff3d",
-    "editor.findMatchHighlightBackground": "#6eaaf83b",
-    "editorWhitespace.foreground": "#d6d6d6",
-    "editor.selectionBackground": "#999999a2",
-    "titleBar.activeBackground": "#001ea3",
-    "titleBar.activeForeground": "#ffffff",
-    "statusBar.background": "#001366",
-    "sideBar.background": "#e5ebf5",
-    "sideBarSectionHeader.background": "#006eff1e",
-    "sideBar.dropBackground": "#006eff05",
-    "activityBar.background": "#006eff21",
-    "activityBar.inactiveForeground": "#001ea34b",
-    "activityBar.foreground": "#001ea3"
-  },
-
   // ウィンドウ
   "window.zoomLevel": 0,
-
   // エディタ
-  "workbench.colorTheme": "Quiet Light",
+  "workbench.colorTheme": "Sky Light",
   "workbench.editor.showTabs": false,
   "workbench.iconTheme": "vscode-icons",
   "material-icon-theme.folders.color": "#90a4ae",
@@ -68,7 +38,6 @@
   "editor.highlightActiveIndentGuide": true,
   "editor.trimAutoWhitespace": false,
   "editor.suggestSelection": "first",
-
   // indent rainbow
   // colorful
   // "indentRainbow.colors": [
@@ -84,23 +53,18 @@
     "rgba(99,100,102,0.1)",
     "rgba(42,43,45,0.1)"
   ],
-
   // 検索
   "search.quickOpen.includeSymbols": true,
   "search.useReplacePreview": false,
-
   // emmet
   "emmet.showSuggestionsAsSnippets": true,
-
   // vs intellicode
   "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
-
   // files associations
   "files.associations": {
     "*.js": "javascript",
     "*.scss": "scss"
   },
-
   // eslint
   "eslint.autoFixOnSave": true,
   "eslint.validate": [
@@ -123,26 +87,21 @@
     }
   ],
   "eslint.run": "onType",
-
   // prettier
   "prettier.tslintIntegration": true,
   "prettier.eslintIntegration": true,
-
   // C言語
   "C_Cpp.clang_format_style": "{ BasedOnStyle: LLVM, IndentWidth: 2, TabWidth: 2, UseTab: Never,  Standard: Auto, AllowShortIfStatementsOnASingleLine: true, AllowShortLoopsOnASingleLine: true, AllowShortFunctionsOnASingleLine: Empty, MaxEmptyLinesToKeep: 1, ReflowComments: false }",
-
   // Golang
   "go.lintOnSave": "package",
   "go.formatTool": "goimports",
   "go.gopath": "~/Developer/go",
   "go.inferGopath": true,
-
   // latex
   "latex-workshop.message.update.show": false,
   "latex-workshop.latex.autoBuild.cleanAndRetry.enabled": false,
   "latex-workshop.latex.autoBuild.run": "never",
   "latex-workshop.synctex.afterBuild.enabled": false,
-
   // javascript
   "[javascript]": {
     "editor.insertSpaces": true,
@@ -156,7 +115,6 @@
   "javascript.format.insertSpaceAfterOpeningAndBeforeClosingJsxExpressionBraces": true,
   "javascript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBrackets": true,
   "javascript.format.insertSpaceAfterConstructor": true,
-
   // typescript
   "[typescript]": {
     // "editor.defaultFormatter": "vscode.typescript-language-features",
@@ -166,7 +124,6 @@
   "typescript.format.enable": false,
   "typescript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBrackets": true,
   "typescript.preferences.quoteStyle": "single",
-
   // vue
   "vetur.format.options.tabSize": 2,
   "vetur.format.defaultFormatter.js": "vscode-typescript",
@@ -176,17 +133,14 @@
   "vetur.experimental.templateInterpolationService": true,
   "vetur.validation.script": true,
   "vetur.validation.template": true,
-
   // html
   "html.format.indentInnerHtml": true,
   "html.autoClosingTags": true,
   "html.format.enable": false,
-
   // scss
   "[scss]": {
     "editor.defaultFormatter": "vscode.css-language-features"
   },
-
   // markdown-pdf
   "markdown-pdf.displayHeaderFooter": false,
   "markdown-pdf.headerTemplate": "",
@@ -197,20 +151,16 @@
   "markdown-pdf.margin.top": "2.5cm",
   "markdown-pdf.breaks": true,
   "markdown-pdf.convertOnSave": false,
-
   // java
   "java.errors.incompleteClasspath.severity": "ignore",
-
   // verilog
   "verilog.linting.linter": "iverilog",
-
   // json
   "json.schemas": [
     {
       "http://json.schemastore.org/tsconfig": ["tsconfig.json"]
     }
   ],
-
   // yaml
   "yaml.schemas": {
     "https://raw.githubusercontent.com/kogosoftwarellc/open-api/master/packages/openapi-schema-validator/resources/openapi-3.0.json": [
@@ -222,16 +172,13 @@
   "[yaml]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-
   // nginx
   "[NGINX]": {
     "editor.tabSize": 2,
     "editor.formatOnSave": false
   },
-
   // vsNotes
   "vsnotes.defaultNotePath": "~/Library/Mobile Documents/9CR7T2DMDG~com~ngocluu~onewriter/Documents/notes",
   "vsnotes.defaultNoteTitle": "{title}.{ext}"
-
   // others
 }

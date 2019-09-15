@@ -17,4 +17,5 @@ rm ~/dotfiles/templates/templates
 # vscode setting files
 [ -f ~/Library/Application\ Support/Code/User/settings.json ] && ln -sf ~/dotfiles/.config/vscode/settings.json ~/Library/Application\ Support/Code/User/settings.json
 [ -f ~/Library/Application\ Support/Code/User/keybindings.json ] && ln -sf ~/dotfiles/.config/vscode/keybindings.json ~/Library/Application\ Support/Code/User/keybindings.json
-[ -f ~/Library/Application\ Support/Code/User/snippets ] && ln -sf ~/dotfiles/.config/vscode/snippets ~/Library/Application\ Support/Code/User/snippets
+[ -d ~/Library/Application\ Support/Code/User/snippets ] && ln -sf ~/dotfiles/.config/vscode/snippets ~/Library/Application\ Support/Code/User/snippets
+[ -d ~/.vscode/extensions ]  && ln -sf ~/dotfiles/.config/vscode/extensions/sky ~/.vscode/extensions

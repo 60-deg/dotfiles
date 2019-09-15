@@ -1,0 +1,21 @@
+{
+    "name": "sky",
+    "displayName": "Sky Light",
+    "description": "sky blue color theme",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.38.0"
+    },
+    "categories": [
+        "Themes"
+    ],
+    "contributes": {
+        "themes": [
+            {
+                "label": "Sky Light",
+                "uiTheme": "vs",
+                "path": "./themes/Sky Light-color-theme.json"
+            }
+        ]
+    }
+}
