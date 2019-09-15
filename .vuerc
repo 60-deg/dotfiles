@@ -1,7 +1,7 @@
 {
   "useTaobaoRegistry": false,
-  "latestVersion": "3.8.4",
-  "lastChecked": 1560929618060,
+  "latestVersion": "3.9.3",
+  "lastChecked": 1563465283023,
   "presets": {
     "default": {
       "useConfigFiles": true,
@@ -33,6 +33,41 @@
       "router": true,
       "routerHistoryMode": true,
       "cssPreprocessor": "node-sass"
+    },
+    "ts-sass": {
+      "useConfigFiles": true,
+      "plugins": {
+        "@vue/cli-plugin-babel": {},
+        "@vue/cli-plugin-typescript": {
+          "classComponent": true,
+          "tsLint": true,
+          "lintOn": [
+            "save"
+          ],
+          "useTsWithBabel": true
+        }
+      },
+      "router": true,
+      "routerHistoryMode": true,
+      "vuex": true,
+      "cssPreprocessor": "node-sass"
+    },
+    "babel-router-vuex-sass-eslint-prettier": {
+      "useConfigFiles": true,
+      "plugins": {
+        "@vue/cli-plugin-babel": {},
+        "@vue/cli-plugin-eslint": {
+          "config": "prettier",
+          "lintOn": [
+            "save"
+          ]
+        }
+      },
+      "router": true,
+      "routerHistoryMode": true,
+      "vuex": true,
+      "cssPreprocessor": "node-sass"
     }
-  }
+  },
+  "packageManager": "npm"
 }

@@ -23,6 +23,8 @@
 	cmamp = !git commit --amend --no-edit && git push-f
 	a = add
 	adda = add -A
+	stashall = stash -u # untrackなファイルも含める
+	stashunstage = stash -k # stageされているファイルは除く
 	df = diff
 	co = checkout
 	br = branch
