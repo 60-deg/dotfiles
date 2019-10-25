@@ -2,7 +2,7 @@
 
 export NODE_ENV=development
 export TERM=xterm-256color
-export PATH=$PATH:/usr/local/bin:~/Developer/go/bin:/opt/local/Library/Frameworks/Python.framework/Versions/2.7/bin:/Applications/microchip/xc8/v1.43/bin:~/.nimble/bin
+export PATH=$PATH:/usr/local/bin:~/Developer/go/bin:/opt/local/Library/Frameworks/Python.framework/Versions/2.7/bin:/Applications/microchip/xc8/v1.43/bin:~/.nimble/bin:/usr/local/Cellar/riscv-gnu-toolchain/gnu/bin
 export GOPATH=~/Developer/go
 export SDKMAN_DIR=~/.sdkman
 [ -s ~/.sdkman/bin/sdkman-init.sh ] && source ~/.sdkman/bin/sdkman-init.sh
@@ -17,8 +17,6 @@ alias gcco='gcc -c'
 alias gpp='g++ -std=c++14 -O0 -g -fsanitize=undefined -fsanitize=address -Wall'
 alias gpp11='g++ -std=c++11 -O0 -g -fsanitize=undefined -fsanitize=address -Wall'
 alias gpprest='g++ -L/usr/local/opt/openssl/lib -I/usr/local/opt/openssl/include -lssl -lcrypto -lcpprest -lboost_system -lboost_thread-mt -lboost_chrono-mt -g'
-
-alias python='python3'
 
 if [ "$(uname)" == 'Darwin' ]; then
   # mac
