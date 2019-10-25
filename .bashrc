@@ -28,6 +28,9 @@ else
 fi
 alias diff='diff -u'
 
+alias latexinit='cp ~/dotfiles/.latexmkrc .'
+alias latexmkpvc='latexmk -pvc'
+
 alias touchcpp='cp ~/.templates/cpp.txt'
 alias touchc='cp ~/.templates/c.txt'
 alias touchtex='cp ~/.templates/tex.txt'

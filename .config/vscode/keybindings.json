@@ -150,5 +150,20 @@
     "key": "alt+cmd+up",
     "command": "-editor.action.insertCursorAbove",
     "when": "editorTextFocus"
+  },
+  {
+    "key": "ctrl+alt+b",
+    "command": "latex-workshop.build",
+    "when": "resourceLangId == latex"
+  },
+  {
+    "key": "ctrl+alt+c",
+    "command": "latex-workshop.clean",
+    "when": "resourceLangId == latex"
+  },
+  {
+    "key": "ctrl+alt+s",
+    "command": "latex-workshop.synctex",
+    "when": "resourceLangId == latex"
   }
 ]
