@@ -68,6 +68,17 @@ passgen() {
 cdorig() { cd `readlink $1`
 }
 
+# .gitignore を生成
+creategitignore() {
+  URL='https://www.gitignore.io/api/'
+  for i in $*
+  do
+    URL="${URL}${i},"
+  done
+  URL=${URL%,} # 最後の","を削除
+  curl $URL -o .gitignore
+}
+
 
 # プロンプト表示
 
