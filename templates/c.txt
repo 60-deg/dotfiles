@@ -1,7 +1,0 @@
-#include <stdio.h>
-
-#define debug(x) fprintf(stderr, "%d: %s = %s\n", __LINE__, #x, x);
-
-int main(void){
-  return 0;
-}

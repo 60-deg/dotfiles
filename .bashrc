@@ -29,15 +29,10 @@ alias diff='diff -u'
 alias latexinit='cp ~/dotfiles/.latexmkrc .'
 alias latexmkpvc='latexmk -pvc'
 
-alias touchcpp='cp ~/.templates/cpp.txt'
-alias touchc='cp ~/.templates/c.txt'
-alias touchtex='cp ~/.templates/tex.txt'
-alias touchsh='cp ~/.templates/sh.txt'
-alias touchvue='cp ~/.templates/Vue.txt'
-alias touchvuets='cp ~/.templates/Vue-ts.txt'
-alias touchreact='cp ~/.templates/React.txt'
+touchx() { touch $1; chmod +x $1
+}
 
-[ -e code ] || code() { open $1 -a Visual\ Studio\ Code.app 
+[ -e code ] || code() { open $1 -a Visual\ Studio\ Code.app
 }
 alias opendotfiles='open ~/dotfiles/ -a Visual\ Studio\ Code.app'
 alias openiterm='open . -a iTerm'
@@ -48,9 +43,6 @@ alias gocwi='gocwi -a $STUDENTNUMBER -p $OCWIPASS -m $OCWIMATRIX -d ~/Dropbox/�
 alias transparent='convert -fuzz 50% -fill none -opaque'
 
 alias mysql='mysql -uroot -p$MARIADB_PASSWORD'
-
-
-# 関数
 
 # generate password
 passgen() {

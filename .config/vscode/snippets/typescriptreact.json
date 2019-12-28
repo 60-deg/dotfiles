@@ -1,0 +1,20 @@
+{
+  "typescript react template": {
+    "prefix": "template",
+    "body": [
+      "import * as React from 'react'",
+      "",
+      "interface Props {}",
+      "interface State {}",
+      "",
+      "class $1 extends React.Component<Props, State> {",
+      "  render() {",
+      "    return <div>$0</div>",
+      "  }",
+      "}",
+      "",
+      "export default ${1}",
+      ""
+    ]
+  }
+}

@@ -1,0 +1,6 @@
+{
+  ".sh template": {
+    "prefix": "template",
+    "body": "#!/bin/bash\n\n$0\n"
+  }
+}

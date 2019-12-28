@@ -1,0 +1,102 @@
+{
+  "vue template (pug, js, scss)": {
+    "prefix": "template",
+    "body": [
+      "<template lang=\"pug\">",
+      "div",
+      "  $0",
+      "</template>",
+      "",
+      "<script>",
+      "export default {",
+      "  name: '$1',",
+      "  components: {},",
+      "  props: {},",
+      "  data() {",
+      "    return {}",
+      "  },",
+      "  methods: {},",
+      "  computed: {},",
+      "  watch: {},",
+      "  mounted() {}",
+      "}",
+      "</script>",
+      "",
+      "<!-- Add 'scoped' attribute to limit CSS to this component only -->",
+      "<style lang=\"scss\" scoped></style>",
+      ""
+    ]
+  },
+  "vue template (html, js, scss)": {
+    "prefix": "template",
+    "body": [
+      "<template>",
+      "  <div>",
+      "    $0",
+      "  </div>",
+      "</template>",
+      "",
+      "<script>",
+      "export default {",
+      "  name: '$1',",
+      "  components: {},",
+      "  props: {},",
+      "  data() {",
+      "    return {}",
+      "  },",
+      "  methods: {},",
+      "  computed: {},",
+      "  watch: {},",
+      "  mounted() {}",
+      "}",
+      "</script>",
+      "",
+      "<!-- Add 'scoped' attribute to limit CSS to this component only -->",
+      "<style lang=\"scss\" scoped></style>",
+      ""
+    ]
+  },
+  "vue template (html, ts, scss)": {
+    "prefix": "template",
+    "body": [
+      "<template>",
+      "  <div>",
+      "    $0",
+      "  </div>",
+      "</template>",
+      "",
+      "<script lang=\"ts\">",
+      "import { Vue, Component, Prop, Emit, Watch } from 'vue-property-decorator'",
+      "",
+      "@Component({",
+      "  components: {}",
+      "})",
+      "export default class $1 extends Vue {}",
+      "</script>",
+      "",
+      "<style lang=\"scss\" scoped></style>",
+      ""
+    ]
+  },
+  "vue template (pug, ts, scss)": {
+    "prefix": "template",
+    "body": [
+      "<template lang=\"pug\">",
+      "  div",
+      "    $0",
+      "</template>",
+      "",
+      "<script lang=\"ts\">",
+      "import { Vue, Component, Prop, Emit, Watch } from 'vue-property-decorator'",
+      "",
+      "@Component({",
+      "  components: {}",
+      "})",
+      "export default class $1 extends Vue {}",
+      "</script>",
+      "",
+      "<style lang=\"scss\" scoped></style>",
+      ""
+    ]
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "c template": {
+    "prefix": "template",
+    "body": [
+      "#include <stdio.h>",
+      "",
+      "#define debug(x) fprintf(stderr, \"%d: %s = %s",
+      "\", __LINE__, #x, x);",
+      "",
+      "int main(void){",
+      "  $0",
+      "",
+      "  return 0;",
+      "}",
+      ""
+    ]
+  },
+  "printf for debug": {
+    "prefix": "log",
+    "body": ["printf(\"$1%$2\\n\", $3);  // debug"]
+  }
+}

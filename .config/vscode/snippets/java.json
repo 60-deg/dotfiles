@@ -1,0 +1,34 @@
+{
+	"Print to console": {
+		"prefix": "log",
+		"body": [
+			"System.out.println($1);",
+			"$0"
+		],
+		"description": "Log output to console"
+	},
+	"Print to console for debug": {
+		"prefix": "debug",
+		"body": [
+			"System.out.println($1);\t// for debug",
+			"$0"
+		],
+		"description": "Log output to console for debug"
+	},
+	"Print String to console": {
+		"prefix": "log",
+		"body": [
+			"System.out.println(\"$1\");",
+			"$0"
+		],
+		"description": "Log output to console"
+	},
+	"public static void main": {
+		"prefix": "public_static_void_main",
+		"body": [
+			"public static void main(String[] args) {",
+			"\t$0",
+			"}"
+		]
+	}
+}
