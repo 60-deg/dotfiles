@@ -2,6 +2,7 @@
   "workbench.startupEditor": "newUntitledFile",
   "workbench.editor.closeEmptyGroups": false,
   "update.showReleaseNotes": false,
+
   // 統合ターミナル
   "terminal.integrated.copyOnSelection": true,
   "terminal.integrated.fontFamily": "SF Mono, RobotoMono Nerd Font Mono, monospace, serif",
@@ -9,22 +10,32 @@
   "terminal.integrated.cursorStyle": "line",
   "terminal.integrated.lineHeight": 1.2,
   "terminal.integrated.rendererType": "dom",
+
   // ウィンドウ
   "window.zoomLevel": 0,
+  "explorer.confirmDelete": false,
+  "explorer.confirmDragAndDrop": false,
+  "explorer.compactFolders": false,
+
   // エディタ
   "workbench.colorTheme": "Sky Light",
   "workbench.editor.showTabs": false,
   "workbench.iconTheme": "vscode-icons",
+  "workbench.statusBar.visible": true,
   "material-icon-theme.folders.color": "#90a4ae",
+  "files.insertFinalNewline": true,
+  "files.trimTrailingWhitespace": true,
   "editor.fontFamily": "Myrica M, Cica, Menlo, Monaco, 'Courier New', monospace",
   "editor.fontSize": 14,
   "editor.wrappingIndent": "indent",
   "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll": true
+  },
   "editor.formatOnType": false,
   "editor.detectIndentation": true,
   "editor.tabSize": 2,
   "editor.wordWrap": "on",
-  "explorer.confirmDelete": false,
   "editor.renderWhitespace": "none",
   "editor.minimap.enabled": false,
   "editor.snippetSuggestions": "top",
@@ -38,35 +49,18 @@
   "editor.highlightActiveIndentGuide": true,
   "editor.trimAutoWhitespace": false,
   "editor.suggestSelection": "first",
-  // indent rainbow
-  // colorful
-  // "indentRainbow.colors": [
-  //   "rgba(249,219,227,0.2)",
-  //   "rgba(193,229,220,0.2)",
-  //   "rgba(206,191,219,0.2)",
-  //   "rgba(225,251,128,0.2)"
-  // ],
-  // monochrome
-  "indentRainbow.colors": [
-    "rgba(205,208,217,0.15)",
-    "rgba(164,166,171,0.15)",
-    "rgba(99,100,102,0.1)",
-    "rgba(42,43,45,0.1)"
-  ],
+
   // 検索
   "search.quickOpen.includeSymbols": true,
   "search.useReplacePreview": false,
+
   // emmet
   "emmet.showSuggestionsAsSnippets": true,
+
   // vs intellicode
   "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
-  // files associations
-  "files.associations": {
-    "*.js": "javascript",
-    "*.scss": "scss"
-  },
+
   // eslint
-  "eslint.autoFixOnSave": true,
   "eslint.validate": [
     {
       "language": "javascript",
@@ -87,21 +81,22 @@
     }
   ],
   "eslint.run": "onType",
-  // prettier
-  "prettier.tslintIntegration": true,
-  "prettier.eslintIntegration": true,
+
   // C言語
   "C_Cpp.clang_format_style": "{ BasedOnStyle: LLVM, IndentWidth: 2, TabWidth: 2, UseTab: Never,  Standard: Auto, AllowShortIfStatementsOnASingleLine: true, AllowShortLoopsOnASingleLine: true, AllowShortFunctionsOnASingleLine: Empty, MaxEmptyLinesToKeep: 1, ReflowComments: false }",
+
   // Golang
   "go.lintOnSave": "package",
   "go.formatTool": "goimports",
   "go.gopath": "~/Developer/go",
   "go.inferGopath": true,
+
   // latex
   "latex-workshop.message.update.show": false,
   "latex-workshop.latex.autoBuild.cleanAndRetry.enabled": false,
   "latex-workshop.latex.autoBuild.run": "never",
   "latex-workshop.synctex.afterBuild.enabled": false,
+
   // javascript
   "[javascript]": {
     "editor.insertSpaces": true,
@@ -115,6 +110,7 @@
   "javascript.format.insertSpaceAfterOpeningAndBeforeClosingJsxExpressionBraces": true,
   "javascript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBrackets": true,
   "javascript.format.insertSpaceAfterConstructor": true,
+
   // typescript
   "[typescript]": {
     // "editor.defaultFormatter": "vscode.typescript-language-features",
@@ -125,6 +121,8 @@
   "typescript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBrackets": true,
   "typescript.preferences.quoteStyle": "single",
   "typescript.updateImportsOnFileMove.enabled": "always",
+  "typescript.preferences.renameShorthandProperties": false,
+
   // vue
   "vetur.format.enable": false,
   "vetur.format.options.tabSize": 2,
@@ -135,35 +133,32 @@
   "vetur.experimental.templateInterpolationService": true,
   "vetur.validation.script": true,
   "vetur.validation.template": true,
+
   // html
   "html.format.indentInnerHtml": true,
   "html.autoClosingTags": true,
   "html.format.enable": false,
+
   // scss
   "[scss]": {
     "editor.defaultFormatter": "vscode.css-language-features"
   },
-  // markdown-pdf
-  "markdown-pdf.displayHeaderFooter": false,
-  "markdown-pdf.headerTemplate": "",
-  "markdown-pdf.footerTemplate": "<div style=\"font-size: 9px; margin: 0 auto;\"> <span class='pageNumber'></span> / <span class='totalPages'></span></div>",
-  "markdown-pdf.margin.bottom": "2cm",
-  "markdown-pdf.margin.left": "2cm",
-  "markdown-pdf.margin.right": "2cm",
-  "markdown-pdf.margin.top": "2.5cm",
-  "markdown-pdf.breaks": true,
-  "markdown-pdf.convertOnSave": false,
+
   // java
   "java.errors.incompleteClasspath.severity": "ignore",
   "java.configuration.checkProjectSettingsExclusions": false,
+  "java.home": "/Library/Java/JavaVirtualMachines/openjdk-12.0.1.jdk/Contents/Home",
+
   // verilog
   "verilog.linting.linter": "iverilog",
+
   // json
   "json.schemas": [
     {
       "http://json.schemastore.org/tsconfig": ["tsconfig.json"]
     }
   ],
+
   // yaml
   "yaml.schemas": {
     "https://raw.githubusercontent.com/kogosoftwarellc/open-api/master/packages/openapi-schema-validator/resources/openapi-3.0.json": [
@@ -175,14 +170,67 @@
   "[yaml]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
+
   // nginx
   "[NGINX]": {
     "editor.tabSize": 2,
     "editor.formatOnSave": false
   },
-  // vsNotes
+
+  // git
+  "git.enableSmartCommit": true,
+  "diffEditor.ignoreTrimWhitespace": false,
+
+  // prettier
+  "prettier.semi": false,
+  "prettier.singleQuote": true,
+
+  // (Extension) markdown-pdf
+  "markdown-pdf.displayHeaderFooter": false,
+  "markdown-pdf.headerTemplate": "",
+  "markdown-pdf.footerTemplate": "<div style=\"font-size: 9px; margin: 0 auto;\"> <span class='pageNumber'></span> / <span class='totalPages'></span></div>",
+  "markdown-pdf.margin.bottom": "2cm",
+  "markdown-pdf.margin.left": "2cm",
+  "markdown-pdf.margin.right": "2cm",
+  "markdown-pdf.margin.top": "2.5cm",
+  "markdown-pdf.breaks": true,
+  "markdown-pdf.convertOnSave": false,
+
+  // (Extension) vsNotes
   "vsnotes.defaultNotePath": "~/Library/Mobile Documents/9CR7T2DMDG~com~ngocluu~onewriter/Documents/notes",
   "vsnotes.defaultNoteTitle": "{title}.{ext}",
+
+  // (Extension) indent rainbow
+  // colorful
+  // "indentRainbow.colors": [
+  //   "rgba(249,219,227,0.2)",
+  //   "rgba(193,229,220,0.2)",
+  //   "rgba(206,191,219,0.2)",
+  //   "rgba(225,251,128,0.2)"
+  // ],
+  // monochrome
+  "indentRainbow.colors": [
+    "rgba(205,208,217,0.15)",
+    "rgba(164,166,171,0.15)",
+    "rgba(99,100,102,0.1)",
+    "rgba(42,43,45,0.1)"
+  ],
+
+  // (Extension) LiveServer
+  "liveServer.settings.host": "localhost",
+  "liveServer.settings.donotShowInfoMsg": true,
+  "liveServer.settings.donotVerifyTags": true,
+  // (Extension) Bracket Pair Colorizer
+  "bracket-pair-colorizer-2.colors": [
+    "Blue",
+    "SkyBlue",
+    "Green",
+    "Orchid",
+    "Gold"
+  ],
+
   // others
-  "explorer.confirmDragAndDrop": false
+  "maven.terminal.useJavaHome": true,
+  "task.autoDetect": "off",
+  "vsicons.dontShowNewVersionMessage": true
 }

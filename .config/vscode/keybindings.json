@@ -165,5 +165,13 @@
     "key": "ctrl+alt+s",
     "command": "latex-workshop.synctex",
     "when": "resourceLangId == latex"
+  },
+  {
+    "key": "alt+c right",
+    "command": "lastCursorWordSelect"
+  },
+  {
+    "key": "cmd+l",
+    "command": "expandLineSelection"
   }
 ]
