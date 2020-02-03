@@ -1,7 +1,7 @@
 {
   "useTaobaoRegistry": false,
-  "latestVersion": "3.9.3",
-  "lastChecked": 1563465283023,
+  "latestVersion": "4.1.1",
+  "lastChecked": 1575799576867,
   "presets": {
     "default": {
       "useConfigFiles": true,
@@ -66,6 +66,49 @@
       "router": true,
       "routerHistoryMode": true,
       "vuex": true,
+      "cssPreprocessor": "node-sass"
+    },
+    "tofu-manju": {
+      "useConfigFiles": true,
+      "plugins": {
+        "@vue/cli-plugin-babel": {},
+        "@vue/cli-plugin-typescript": {
+          "classComponent": true,
+          "useTsWithBabel": true
+        },
+        "@vue/cli-plugin-router": {
+          "historyMode": false
+        },
+        "@vue/cli-plugin-vuex": {},
+        "@vue/cli-plugin-eslint": {
+          "config": "prettier",
+          "lintOn": [
+            "save",
+            "commit"
+          ]
+        }
+      },
+      "cssPreprocessor": "node-sass"
+    },
+    "babel-ts-router-vuex-sass-eslint": {
+      "useConfigFiles": true,
+      "plugins": {
+        "@vue/cli-plugin-babel": {},
+        "@vue/cli-plugin-typescript": {
+          "classComponent": true,
+          "useTsWithBabel": true
+        },
+        "@vue/cli-plugin-router": {
+          "historyMode": true
+        },
+        "@vue/cli-plugin-vuex": {},
+        "@vue/cli-plugin-eslint": {
+          "config": "prettier",
+          "lintOn": [
+            "save"
+          ]
+        }
+      },
       "cssPreprocessor": "node-sass"
     }
   },
