@@ -1,7 +1,7 @@
 {
   "useTaobaoRegistry": false,
-  "latestVersion": "4.1.1",
-  "lastChecked": 1575799576867,
+  "latestVersion": "4.2.2",
+  "lastChecked": 1581576470833,
   "presets": {
     "default": {
       "useConfigFiles": true,
