@@ -2,7 +2,6 @@
   "workbench.startupEditor": "newUntitledFile",
   "workbench.editor.closeEmptyGroups": false,
   "update.showReleaseNotes": false,
-
   // 統合ターミナル
   "terminal.integrated.copyOnSelection": true,
   "terminal.integrated.fontFamily": "SF Mono, RobotoMono Nerd Font Mono, monospace, serif",
@@ -10,13 +9,11 @@
   "terminal.integrated.cursorStyle": "line",
   "terminal.integrated.lineHeight": 1.2,
   "terminal.integrated.rendererType": "dom",
-
   // ウィンドウ
   "window.zoomLevel": 0,
   "explorer.confirmDelete": false,
   "explorer.confirmDragAndDrop": false,
   "explorer.compactFolders": false,
-
   // エディタ
   "workbench.colorTheme": "Sky Light",
   "workbench.editor.showTabs": false,
@@ -49,54 +46,34 @@
   "editor.highlightActiveIndentGuide": true,
   "editor.trimAutoWhitespace": false,
   "editor.suggestSelection": "first",
-
   // 検索
   "search.quickOpen.includeSymbols": true,
   "search.useReplacePreview": false,
-
   // emmet
   "emmet.showSuggestionsAsSnippets": true,
-
   // vs intellicode
   "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
-
   // eslint
   "eslint.validate": [
-    {
-      "language": "javascript",
-      "autoFix": true
-    },
-    {
-      "language": "typescript",
-      "autoFix": true
-    },
+    "javascript",
+    "typescript",
     "javascriptreact",
-    {
-      "language": "vue",
-      "autoFix": true
-    },
-    {
-      "language": "vue-html",
-      "autoFix": true
-    }
+    "vue",
+    "vue-html"
   ],
   "eslint.run": "onType",
-
   // C言語
   "C_Cpp.clang_format_style": "{ BasedOnStyle: LLVM, IndentWidth: 2, TabWidth: 2, UseTab: Never,  Standard: Auto, AllowShortIfStatementsOnASingleLine: true, AllowShortLoopsOnASingleLine: true, AllowShortFunctionsOnASingleLine: Empty, MaxEmptyLinesToKeep: 1, ReflowComments: false }",
-
   // Golang
   "go.lintOnSave": "package",
   "go.formatTool": "goimports",
   "go.gopath": "~/Developer/go",
   "go.inferGopath": true,
-
   // latex
   "latex-workshop.message.update.show": false,
   "latex-workshop.latex.autoBuild.cleanAndRetry.enabled": false,
   "latex-workshop.latex.autoBuild.run": "never",
   "latex-workshop.synctex.afterBuild.enabled": false,
-
   // javascript
   "[javascript]": {
     "editor.insertSpaces": true,
@@ -110,7 +87,6 @@
   "javascript.format.insertSpaceAfterOpeningAndBeforeClosingJsxExpressionBraces": true,
   "javascript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBrackets": true,
   "javascript.format.insertSpaceAfterConstructor": true,
-
   // typescript
   "[typescript]": {
     // "editor.defaultFormatter": "vscode.typescript-language-features",
@@ -122,69 +98,66 @@
   "typescript.preferences.quoteStyle": "single",
   "typescript.updateImportsOnFileMove.enabled": "always",
   "typescript.preferences.renameShorthandProperties": false,
-
   // vue
   "vetur.format.enable": false,
   "vetur.format.options.tabSize": 2,
   "vetur.format.defaultFormatter.js": "vscode-typescript",
-  "pugvuebeautify.omitDiv": true,
+  "pugvuebeautify.omitDiv": false,
   "vetur.format.defaultFormatter.ts": "prettier",
   "vetur.format.defaultFormatter.html": "prettier",
   "vetur.experimental.templateInterpolationService": true,
   "vetur.validation.script": true,
   "vetur.validation.template": true,
-
   // html
   "html.format.indentInnerHtml": true,
   "html.autoClosingTags": true,
   "html.format.enable": false,
-
   // scss
   "[scss]": {
     "editor.defaultFormatter": "vscode.css-language-features"
   },
-
   // java
   "java.errors.incompleteClasspath.severity": "ignore",
   "java.configuration.checkProjectSettingsExclusions": false,
   "java.home": "/Library/Java/JavaVirtualMachines/openjdk-12.0.1.jdk/Contents/Home",
-
+  //php
+  "[php]": {
+    "editor.formatOnSave": true
+  },
   // verilog
   "verilog.linting.linter": "iverilog",
-
   // json
   "json.schemas": [
     {
-      "http://json.schemastore.org/tsconfig": ["tsconfig.json"]
+      "http://json.schemastore.org/tsconfig": [
+        "tsconfig.json"
+      ]
     }
   ],
-
   // yaml
   "yaml.schemas": {
     "https://raw.githubusercontent.com/kogosoftwarellc/open-api/master/packages/openapi-schema-validator/resources/openapi-3.0.json": [
       "*swagger.yaml",
       "*swagger.yml"
     ],
-    "http://json.schemastore.org/ansible-stable-2.5": ["main.yml"]
+    "http://json.schemastore.org/ansible-stable-2.5": [
+      "main.yml"
+    ]
   },
   "[yaml]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-
   // nginx
   "[NGINX]": {
     "editor.tabSize": 2,
     "editor.formatOnSave": false
   },
-
   // git
   "git.enableSmartCommit": true,
   "diffEditor.ignoreTrimWhitespace": false,
-
   // prettier
   "prettier.semi": false,
   "prettier.singleQuote": true,
-
   // (Extension) markdown-pdf
   "markdown-pdf.displayHeaderFooter": false,
   "markdown-pdf.headerTemplate": "",
@@ -195,11 +168,9 @@
   "markdown-pdf.margin.top": "2.5cm",
   "markdown-pdf.breaks": true,
   "markdown-pdf.convertOnSave": false,
-
   // (Extension) vsNotes
   "vsnotes.defaultNotePath": "~/Library/Mobile Documents/9CR7T2DMDG~com~ngocluu~onewriter/Documents/notes",
   "vsnotes.defaultNoteTitle": "{title}.{ext}",
-
   // (Extension) indent rainbow
   // colorful
   // "indentRainbow.colors": [
@@ -215,7 +186,6 @@
     "rgba(99,100,102,0.1)",
     "rgba(42,43,45,0.1)"
   ],
-
   // (Extension) LiveServer
   "liveServer.settings.host": "localhost",
   "liveServer.settings.donotShowInfoMsg": true,
@@ -228,9 +198,11 @@
     "Orchid",
     "Gold"
   ],
-
   // others
   "maven.terminal.useJavaHome": true,
   "task.autoDetect": "off",
-  "vsicons.dontShowNewVersionMessage": true
+  "vsicons.dontShowNewVersionMessage": true,
+  "files.associations": {
+    "*.html": "html"
+  }
 }
