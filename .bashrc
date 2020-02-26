@@ -2,7 +2,7 @@
 
 export NODE_ENV=development
 export TERM=xterm-256color
-export PATH=$PATH:/usr/local/bin:~/Developer/go/bin:/opt/local/Library/Frameworks/Python.framework/Versions/2.7/bin:/Applications/microchip/xc8/v1.43/bin:~/.nimble/bin:/usr/local/Cellar/riscv-gnu-toolchain/gnu/bin
+export PATH=$PATH:/usr/local/bin:~/Developer/go/bin:/opt/local/Library/Frameworks/Python.framework/Versions/2.7/bin:/Applications/microchip/xc8/v1.43/bin:~/.nimble/bin:/usr/local/Cellar/riscv-gnu-toolchain/gnu/bin:~/.composer/vendor/bin
 export GOPATH=~/Developer/go
 export SDKMAN_DIR=~/.sdkman
 [ -s ~/.sdkman/bin/sdkman-init.sh ] && source ~/.sdkman/bin/sdkman-init.sh
