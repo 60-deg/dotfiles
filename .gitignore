@@ -3,3 +3,6 @@
 !/.config/nvim
 !/.config/vscode
 .git-prompt.sh
+
+.ssh
+!.ssh/id_rsa.pub
