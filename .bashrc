@@ -73,10 +73,7 @@ creategitignore() {
 # プロンプト表示
 
 # Gitのブランチ名を表示
-if [ ! -e ~/dotfiles/.git-prompt.sh ]; then
-  wget https://raw.githubusercontent.com/git/git/master/contrib/completion/git-prompt.sh -P ~/dotfiles/ -O .git-prompt.sh
-fi
-source ~/dotfiles/.git-prompt.sh
+source ~/dotfiles/script/git-prompt.sh
 # Gitブランチの状況を*+%で表示
 GIT_PS1_SHOWDIRTYSTATE=true
 GIT_PS1_SHOWUNTRACKEDFILES=true
