@@ -1,0 +1,21 @@
+{
+    "name": "yto60",
+    "displayName": "yto60",
+    "description": "",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.44.0"
+    },
+    "categories": [
+        "Themes"
+    ],
+    "contributes": {
+        "themes": [
+            {
+                "label": "yto60",
+                "uiTheme": "vs",
+                "path": "./themes/yto60-color-theme.json"
+            }
+        ]
+    }
+}

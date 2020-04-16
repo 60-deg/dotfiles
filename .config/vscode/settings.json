@@ -15,7 +15,7 @@
   "explorer.confirmDragAndDrop": false,
   "explorer.compactFolders": false,
   // エディタ
-  "workbench.colorTheme": "Sky Light",
+  "workbench.colorTheme": "yto60",
   "workbench.editor.showTabs": false,
   "workbench.iconTheme": "vscode-icons",
   "workbench.statusBar.visible": true,
