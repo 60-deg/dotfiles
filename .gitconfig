@@ -22,16 +22,22 @@
 	cmam = commit --amend --no-edit
 	cmamp = !git commit --amend --no-edit && git push-f
 	adda = add -A
+	unstage = restore --staged
 	stashall = stash -u # untrackなファイルも含める
 	stashunstaged = stash -k # stageされているファイルは除く
+	init-empty = !git commit --allow-empty -m 'initial commit'
 	df = diff
 	co = checkout
 	br = branch
 	lg = log
+	show-ns = show --name-status --oneline
 	gr = log --graph --date=short --decorate=short --pretty=format:'%Cgreen%h %Creset%cd %C(blue)%cn %C(red)%d %Creset%s'
+	gr5 = gr -n 5
 	gra = gr --all
 	gran = gr --all -n
+	gra5 = gra -n 5
 	po = commit -m "po"
 	pushsu = push --set-upstream
 	pushsuo = push --set-upstream origin
 	push-f = push --force-with-lease
+	merge-ffo = merge --ff-only
