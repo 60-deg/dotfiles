@@ -8,7 +8,7 @@
 	trustExitCode = false
 [user]
 	name = 60°
-	email = hatsumi.yamane.4609@gmail.com
+	email = mail@yto60.dev
 [commit]
 	template = ~/.stCommitMsg
 [color]
