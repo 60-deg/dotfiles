@@ -1,6 +1,6 @@
 {
   "vue template (pug, js, scss)": {
-    "prefix": "template",
+    "prefix": "template-js-pug",
     "body": [
       "<template lang=\"pug\">",
       "div",
@@ -28,7 +28,7 @@
     ]
   },
   "vue template (html, js, scss)": {
-    "prefix": "template",
+    "prefix": "template-js-html",
     "body": [
       "<template>",
       "  <div>",
@@ -57,7 +57,7 @@
     ]
   },
   "vue template (html, ts, scss)": {
-    "prefix": "template",
+    "prefix": "template-html",
     "body": [
       "<template>",
       "  <div>",
@@ -79,7 +79,7 @@
     ]
   },
   "vue template (pug, ts, scss)": {
-    "prefix": "template",
+    "prefix": "template-pug",
     "body": [
       "<template lang=\"pug\">",
       "  div",

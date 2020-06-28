@@ -49,6 +49,12 @@
   // 検索
   "search.quickOpen.includeSymbols": true,
   "search.useReplacePreview": false,
+  "search.exclude": {
+    "**/node_modules": true,
+    "**/bower_components": true,
+    "**/*.code-search": true,
+    "**/dist": true
+  },
   // emmet
   "emmet.showSuggestionsAsSnippets": true,
   // vs intellicode
@@ -70,10 +76,24 @@
   "go.gopath": "~/Developer/go",
   "go.inferGopath": true,
   // latex
-  "latex-workshop.message.update.show": false,
-  "latex-workshop.latex.autoBuild.cleanAndRetry.enabled": false,
+  "latex-workshop.latex.tools": [
+    {
+      "name": "latexmk",
+      "command": "latexmk",
+      "args": [
+        "-synctex=1",
+        "-interaction=nonstopmode",
+        "-file-line-error",
+        "-outdir=%OUTDIR%",
+        "%DOC%"
+      ],
+      "env": {}
+    }
+  ],
+  "latex-workshop.latex.outDir": "%DIR%/build",
+  "latex-workshop.view.pdf.viewer": "tab",
+  "latex-workshop.view.pdf.zoom": "page-width",
   "latex-workshop.latex.autoBuild.run": "never",
-  "latex-workshop.synctex.afterBuild.enabled": false,
   // javascript
   "[javascript]": {
     "editor.insertSpaces": true,
@@ -129,9 +149,7 @@
   // json
   "json.schemas": [
     {
-      "http://json.schemastore.org/tsconfig": [
-        "tsconfig.json"
-      ]
+      "http://json.schemastore.org/tsconfig": ["tsconfig.json"]
     }
   ],
   // yaml
@@ -140,9 +158,7 @@
       "*swagger.yaml",
       "*swagger.yml"
     ],
-    "http://json.schemastore.org/ansible-stable-2.5": [
-      "main.yml"
-    ]
+    "http://json.schemastore.org/ansible-stable-2.5": ["main.yml"]
   },
   "[yaml]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
@@ -155,6 +171,7 @@
   // git
   "git.enableSmartCommit": true,
   "diffEditor.ignoreTrimWhitespace": false,
+  "gitlens.codeLens.enabled": false,
   // prettier
   "prettier.semi": false,
   "prettier.singleQuote": true,
@@ -204,5 +221,12 @@
   "vsicons.dontShowNewVersionMessage": true,
   "files.associations": {
     "*.html": "html"
-  }
+  },
+  "C_Cpp.updateChannel": "Insiders",
+  "regex-previewer.enableCodeLens": false,
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "latex-workshop.message.update.show": false
 }

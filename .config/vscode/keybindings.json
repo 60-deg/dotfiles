@@ -173,5 +173,9 @@
   {
     "key": "cmd+l",
     "command": "expandLineSelection"
+  },
+  {
+    "key": "cmd+o",
+    "command": "-workbench.action.files.openFileFolder"
   }
 ]
