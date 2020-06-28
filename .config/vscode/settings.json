@@ -220,7 +220,8 @@
   "task.autoDetect": "off",
   "vsicons.dontShowNewVersionMessage": true,
   "files.associations": {
-    "*.html": "html"
+    "*.html": "html",
+    "*.fish": "shellscript"
   },
   "C_Cpp.updateChannel": "Insiders",
   "regex-previewer.enableCodeLens": false,

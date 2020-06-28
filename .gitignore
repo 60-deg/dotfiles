@@ -2,5 +2,6 @@
 /.config/*
 !/.config/nvim
 !/.config/vscode
+!/.config/fish
 
 .ssh
