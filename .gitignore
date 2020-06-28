@@ -4,4 +4,3 @@
 !/.config/vscode
 
 .ssh
-!.ssh/id_rsa.pub
