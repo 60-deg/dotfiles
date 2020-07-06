@@ -229,5 +229,6 @@
   "[json]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "latex-workshop.message.update.show": false
+  "latex-workshop.message.update.show": false,
+  "terminal.integrated.shell.osx": "/bin/zsh"
 }
