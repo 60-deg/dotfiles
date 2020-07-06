@@ -1,18 +1,18 @@
 # setup
 
-if [ -f ~/.private ]
-  source ~/.private
+if [ -f $HOME/.private ]
+  source $HOME/.private
 end
-~/dotfiles/createLink.sh
+$HOME/dotfiles/createLink.sh
 
 
 # set env variables
 
 set -x NODE_ENV development
 set -x TERM xterm-256color
-set -x PATH $PATH /usr/local/bin:~/Developer/go/bin:/opt/local/Library/Frameworks/Python.framework/Versions/2.7/bin:/Applications/microchip/xc8/v1.43/bin:~/.nimble/bin:/usr/local/Cellar/riscv-gnu-toolchain/gnu/bin:~/.composer/vendor/bin
-set -x GOPATH ~/Developer/go
-set -x SDKMAN_DIR ~/.sdkman
+set -x GOPATH $HOME/Developer/go
+set -x PATH $PATH /usr/local/bin:$GOPATH/bin:/opt/local/Library/Frameworks/Python.framework/Versions/2.7/bin:/Applications/microchip/xc8/v1.43/bin:$HOME/.nimble/bin:/usr/local/Cellar/riscv-gnu-toolchain/gnu/bin:$HOME/.composer/vendor/bin
+set -x SDKMAN_DIR $HOME/.sdkman
 # [ -s ~/.sdkman/bin/sdkman-init.sh ] && source ~/.sdkman/bin/sdkman-init.sh
 
 
@@ -28,10 +28,10 @@ alias gpprest='g++ -L/usr/local/opt/openssl/lib -I/usr/local/opt/openssl/include
 
 alias diff='diff -u'
 
-alias latexinit='cp ~/dotfiles/.latexmkrc .'
+alias latexinit='cp $HOME/dotfiles/.latexmkrc .'
 alias latexmkpvc='latexmk -pvc'
 
-alias opendotfiles='open ~/dotfiles/ -a Visual\ Studio\ Code.app'
+alias opendotfiles='open $HOME/dotfiles/ -a Visual\ Studio\ Code.app'
 alias openiterm='open . -a iTerm'
 alias opensourcetree='open . -a SourceTree'
 
