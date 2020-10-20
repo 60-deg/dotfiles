@@ -7,7 +7,7 @@
 	cmd = '/Applications/Visual Studio Code.app/Contents/Resources/app/bin/code' \"$MERGED\"
 	trustExitCode = false
 [user]
-	name = 60°
+	name = yto60
 	email = mail@yto60.dev
 [commit]
 	template = ~/.stCommitMsg
