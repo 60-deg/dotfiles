@@ -41,3 +41,4 @@
 	pushsuo = push --set-upstream origin
 	push-f = push --force-with-lease
 	merge-ffo = merge --ff-only
+	fp = fetch --prune

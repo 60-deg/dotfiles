@@ -35,8 +35,8 @@ alias opendotfiles='open $HOME/dotfiles/ -a Visual\ Studio\ Code.app'
 alias openiterm='open . -a iTerm'
 alias opensourcetree='open . -a SourceTree'
 
-alias gocwi='gocwi -a $STUDENTNUMBER -p $OCWIPASS -m $OCWIMATRIX -d ~/Dropbox/講義資料'
-
 alias transparent='convert -fuzz 50% -fill none -opaque'
 
 alias mysql='mysql -uroot -p$MARIADB_PASSWORD'
+
+alias docker-c='docker-compose'
