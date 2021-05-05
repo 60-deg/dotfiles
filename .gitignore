@@ -3,5 +3,6 @@
 !/.config/nvim
 !/.config/vscode
 !/.config/fish
+!/.config/hammerspoon
 
 .ssh

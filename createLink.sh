@@ -16,8 +16,9 @@ ln -sf ~/dotfiles/.vuerc ~/.vuerc
 ln -sf ~/dotfiles/.config ~/
 ln -sf ~/dotfiles/.templates ~/
 
-# vscode setting files
+# application setting files
 [ -f ~/Library/Application\ Support/Code/User/settings.json ] && ln -sf ~/dotfiles/.config/vscode/settings.json ~/Library/Application\ Support/Code/User/settings.json
 [ -f ~/Library/Application\ Support/Code/User/keybindings.json ] && ln -sf ~/dotfiles/.config/vscode/keybindings.json ~/Library/Application\ Support/Code/User/keybindings.json
 [ -d ~/Library/Application\ Support/Code/User ] && ln -sf ~/dotfiles/.config/vscode/snippets ~/Library/Application\ Support/Code/User
 [ -d ~/.vscode/extensions ] && ln -sf ~/dotfiles/.config/vscode/extensions/* ~/.vscode/extensions
+[ -d ~/.hammerspoon ] && ln -sf ~/dotfiles/.config/hammerspoon/init.lua ~/.hammerspoon/init.lua
