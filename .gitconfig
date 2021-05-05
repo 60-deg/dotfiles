@@ -15,6 +15,10 @@
 	ui = auto
 	#色の表示ができないとき
 	# ui = false
+[init]
+	defaultBranch = main
+[pull]
+	rebase = false
 [alias]
 	st = status
 	cm = commit
