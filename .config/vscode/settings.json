@@ -18,6 +18,7 @@
   // エディタ
   "workbench.colorTheme": "yto60",
   "workbench.editor.showTabs": false,
+  "workbench.editor.untitled.hint": "hidden",
   "workbench.iconTheme": "material-icon-theme",
   "workbench.statusBar.visible": true,
   "material-icon-theme.folders.color": "#90a4ae",
