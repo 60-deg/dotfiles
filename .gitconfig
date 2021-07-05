@@ -47,3 +47,4 @@
 	push-f = push --force-with-lease
 	merge-ffo = merge --ff-only
 	fp = fetch --prune
+	br-clean = "!git branch --merged | grep  -v '\\*\\|master\\|main\\|develop' | xargs git branch -d"
