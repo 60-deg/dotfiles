@@ -176,6 +176,17 @@
   "[php]": {
     "editor.formatOnSave": true
   },
+  // ruby / rails
+  "ruby.useLanguageServer": true,
+  "[ruby]": {
+    "editor.defaultFormatter": "misogi.ruby-rubocop"
+  },
+  "ruby.intellisense": "rubyLocate",
+  "[slim-lang]": {
+    "editor.codeActionsOnSave": {
+      "source.fixAll": false
+    },
+  },
   // verilog
   "verilog.linting.linter": "iverilog",
   // json
@@ -257,6 +268,11 @@
   ],
   // (Extension) Remote-Containers
   "remote.containers.dockerPath": "/usr/local/bin/docker",
+  // (Extension) windicss
+  "windicss.includeLanguages": {
+    "markdown": "html",
+    "md": "html"
+  },
   // others
   "task.autoDetect": "off",
   "vsicons.dontShowNewVersionMessage": true,
