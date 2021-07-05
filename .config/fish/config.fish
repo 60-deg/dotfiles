@@ -8,13 +8,8 @@ $HOME/dotfiles/createLink.sh
 
 # set env variables
 
-set -x NODE_ENV development
 set -x TERM xterm-256color
-set -x GOPATH $HOME/Developer/go
-set -x PATH $PATH /usr/local/bin:$GOPATH/bin:/opt/local/Library/Frameworks/Python.framework/Versions/2.7/bin:/Applications/microchip/xc8/v1.43/bin:$HOME/.nimble/bin:/usr/local/Cellar/riscv-gnu-toolchain/gnu/bin:$HOME/.composer/vendor/bin
-set -x SDKMAN_DIR $HOME/.sdkman
-# [ -s ~/.sdkman/bin/sdkman-init.sh ] && source ~/.sdkman/bin/sdkman-init.sh
-
+set -x PATH $PATH /usr/local/bin:~/Developer/go/bin:~/.composer/vendor/bin
 
 # set aliases
 
@@ -33,10 +28,9 @@ alias latexmkpvc='latexmk -pvc'
 
 alias opendotfiles='open $HOME/dotfiles/ -a Visual\ Studio\ Code.app'
 alias openiterm='open . -a iTerm'
-alias opensourcetree='open . -a SourceTree'
 
 alias transparent='convert -fuzz 50% -fill none -opaque'
 
-alias mysql='mysql -uroot -p$MARIADB_PASSWORD'
+alias mysql-root='mysql -uroot -p$MARIADB_PASSWORD'
 
 alias docker-c='docker-compose'
