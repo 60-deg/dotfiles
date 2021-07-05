@@ -1,12 +1,7 @@
 # env vars
 
-export NODE_ENV=development
 export TERM=xterm-256color
-export PATH=$PATH:/usr/local/bin:~/Developer/go/bin:/opt/local/Library/Frameworks/Python.framework/Versions/2.7/bin:/Applications/microchip/xc8/v1.43/bin:~/.nimble/bin:/usr/local/Cellar/riscv-gnu-toolchain/gnu/bin:~/.composer/vendor/bin
-export GOPATH=~/Developer/go
-export SDKMAN_DIR=~/.sdkman
-[ -s ~/.sdkman/bin/sdkman-init.sh ] && source ~/.sdkman/bin/sdkman-init.sh
-
+export PATH=$PATH:/usr/local/bin:~/Developer/go/bin:~/.composer/vendor/bin
 
 # aliases
 
@@ -36,11 +31,10 @@ touchx() { touch $1; chmod +x $1
 }
 alias opendotfiles='open ~/dotfiles/ -a Visual\ Studio\ Code.app'
 alias openiterm='open . -a iTerm'
-alias opensourcetree='open . -a SourceTree'
 
 alias transparent='convert -fuzz 50% -fill none -opaque'
 
-alias mysql='mysql -uroot -p$MARIADB_PASSWORD'
+alias mysql-root='mysql -uroot -p$MARIADB_PASSWORD'
 
 alias docker-c='docker-compose'
 
