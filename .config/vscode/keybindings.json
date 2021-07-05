@@ -177,5 +177,14 @@
   {
     "key": "cmd+o",
     "command": "-workbench.action.files.openFileFolder"
+  },
+  {
+    "key": "shift+cmd+u",
+    "command": "-workbench.action.output.toggleOutput",
+    "when": "workbench.panel.output.active"
+  },
+  {
+    "key": "shift+cmd+u",
+    "command": "cursorRedo"
   }
 ]
