@@ -9,7 +9,7 @@ $HOME/dotfiles/createLink.sh
 # set env variables
 
 set -x TERM xterm-256color
-set -x PATH $PATH /usr/local/bin:~/Developer/go/bin:~/.composer/vendor/bin
+set -x PATH $PATH /usr/local/bin ~/Developer/go/bin ~/.composer/vendor/bin (yarn global bin)
 
 # set aliases
 
