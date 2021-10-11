@@ -1,6 +1,9 @@
 function fish_prompt --description 'Write out the prompt'
     set -l last_pipestatus $pipestatus
 
+    if not set -q __fish_git_prompt_color
+        set -g __fish_git_prompt_color $fish_color_normal
+    end
     if not set -q __fish_git_prompt_show_informative_status
         set -g __fish_git_prompt_show_informative_status 1
     end
@@ -8,7 +11,7 @@ function fish_prompt --description 'Write out the prompt'
         set -g __fish_git_prompt_hide_untrackedfiles 1
     end
     if not set -q __fish_git_prompt_color_branch
-        set -g __fish_git_prompt_color_branch magenta --bold
+        set -g __fish_git_prompt_color_branch 8787d7 --bold
     end
     if not set -q __fish_git_prompt_showupstream
         set -g __fish_git_prompt_showupstream "informative"
@@ -47,7 +50,7 @@ function fish_prompt --description 'Write out the prompt'
         set -g __fish_git_prompt_color_invalidstate red
     end
     if not set -q __fish_git_prompt_color_untrackedfiles
-        set -g __fish_git_prompt_color_untrackedfiles $fish_color_normal
+        set -g __fish_git_prompt_color_untrackedfiles blue
     end
     if not set -q __fish_git_prompt_color_cleanstate
         set -g __fish_git_prompt_color_cleanstate green --bold
@@ -66,20 +69,35 @@ function fish_prompt --description 'Write out the prompt'
             set suffix '#'
         case '*'
             set color_cwd $fish_color_cwd
-            set suffix '$'
+            set suffix '➤ '
     end
 
     # PWD
-    set_color $color_cwd
-    echo ""
-    echo -n (prompt_pwd)
-    set_color normal
+    echo
 
-    printf '%s ' (fish_vcs_prompt)
+    set_color $fish_color_user
+    printf '%s@%s' $USER $hostname
+    set_color $fish_color_normal
+    printf ':'
+    set_color $color_cwd
+    printf '%s' (prompt_pwd)
+    set_color $fish_color_normal
+
+    printf '%s ' (fish_git_prompt)
+
+    set_color $fish_color_normal
+    set -l memory_usage (ps aux | awk '$1 == "yto"' | awk '{ sum+=$6 } END { printf ("%2.1f", sum/1000000) }')
+    set -l memory_usage_int (echo $memory_usage | awk '{ print int($1) }')
+    for i in (seq 0 $memory_usage_int)
+        printf '|'
+    end
+
+    printf '%sGB ' $memory_usage
 
     set -l pipestatus_string (__fish_print_pipestatus "[" "] " "|" (set_color $fish_color_status) (set_color --bold $fish_color_status) $last_pipestatus)
     echo -n $pipestatus_string
-    set_color normal
+    set_color $fish_color_normal
 
-    echo -n "$suffix "
+    echo
+    printf "$suffix "
 end
