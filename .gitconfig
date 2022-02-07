@@ -10,6 +10,8 @@
 [user]
 	name = yto60
 	email = mail@yto60.dev
+[include]
+	path = ~/.gitconfig_local
 [commit]
 	template = ~/.stCommitMsg
 [color]
