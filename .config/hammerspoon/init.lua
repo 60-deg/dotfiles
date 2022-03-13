@@ -34,7 +34,7 @@ local keybinds = {
  local appWatcher = hs.application.watcher.new(function(name, eventType, app)
    if eventType ~= hs.application.watcher.activated then return end
    -- Slack または Discord を起動したときは enable, それ以外を起動したときは disable
-   local fnName = (name == "Slack" or name == "Discord") and "enable" or "disable"
+   local fnName = (name == "Slack" or name == "Discord" or name == "Discord PTB") and "enable" or "disable"
    for i, keybind in ipairs(keybinds) do
      keybind[fnName](keybind)
    end
