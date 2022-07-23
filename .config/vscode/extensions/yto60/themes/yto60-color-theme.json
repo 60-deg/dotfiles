@@ -27,6 +27,7 @@
     "editorIndentGuide.background": "#e0e0e0",
     "editorLineNumber.activeForeground": "#9769dc",
     "editorLineNumber.foreground": "#8e9898",
+    "editorInlayHint.foreground": "#c8cccc",
     "editorWhitespace.foreground": "#d6d6d6",
     "errorForeground": "#f1897f",
     "focusBorder": "#a6b39b",
@@ -68,7 +69,8 @@
     "statusBar.debuggingBackground": "#705697",
     "statusBar.noFolderBackground": "#705697",
     "statusBarItem.remoteBackground": "#3b62b9",
-    "terminal.background": "#d4dbdb",
+    "terminal.background": "#d6dee0",
+    "terminal.selectionBackground": "#00000040",
     "titleBar.activeBackground": "#3b62b9",
     "titleBar.activeForeground": "#f8fefe",
     "walkThrough.embeddedEditorBackground": "#00000014"
