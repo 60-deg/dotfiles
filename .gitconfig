@@ -49,4 +49,10 @@
 	push-f = push --force-with-lease
 	merge-ffo = merge --ff-only
 	fp = fetch --prune
+	fpo = fetch --prune origin
+	rb = rebase
+	rbi = rebase -i
+	rbia = rebase -i --autosquash
+	rbc = rebase --continue
+	step-back = reset --hard @~
 	br-clean = "!git branch --merged | grep  -v '\\*\\|master\\|main\\|develop' | xargs git branch -d"
