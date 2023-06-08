@@ -10,6 +10,12 @@
   "terminal.integrated.lineHeight": 1.2,
   "terminal.integrated.rendererType": "dom",
   "terminal.integrated.shell.osx": "/bin/zsh",
+  "terminal.integrated.profiles.linux": {
+    "bash": {
+      "path": "bash",
+      "args": ["-l"]
+    }
+  },
   // ウィンドウ
   "window.zoomLevel": 0,
   "explorer.confirmDelete": false,

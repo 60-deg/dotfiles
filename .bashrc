@@ -1,7 +1,7 @@
 # env vars
 
 export TERM=xterm-256color
-export PATH=$PATH:/usr/local/bin:~/Developer/go/bin:~/.composer/vendor/bin:"$(yarn global bin)"
+export PATH=$PATH:/usr/local/bin:~/Developer/go/bin:~/.composer/vendor/bin
 
 # aliases
 

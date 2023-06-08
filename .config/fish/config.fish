@@ -5,7 +5,6 @@ if [ -f $HOME/.private ]
 end
 $HOME/dotfiles/createLink.sh
 
-
 # set env variables
 
 set -x TERM xterm-256color
@@ -34,3 +33,6 @@ alias transparent='convert -fuzz 50% -fill none -opaque'
 alias mysql-root='mysql -uroot -p$MARIADB_PASSWORD'
 
 alias docker-c='docker-compose'
+
+alias kill-vscode="ps aux | grep $USER | grep vscode | awk '{ print \$2 }' | xargs -I {} kill -KILL {}"
+alias kill-php7="ps aux | grep $USER | grep php7 | awk '{ print \$2 }' | xargs -I {} kill -KILL {}"
