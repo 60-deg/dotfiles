@@ -88,7 +88,7 @@ function fish_prompt --description 'Write out the prompt'
     set_color $fish_color_normal
     set -l memory_usage (ps aux | awk -v user=$USER '$1 == user' | awk '{ sum+=$6 } END { printf ("%2.1f", sum/1000000) }')
     set -l memory_usage_int (echo $memory_usage | awk '{ print int($1) }')
-    for i in seq 0 $memory_usage_int
+    for i in (seq 0 $memory_usage_int)
         printf '|'
     end
 
